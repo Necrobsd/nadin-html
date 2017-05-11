@@ -1,0 +1,437 @@
+﻿/*.carcas {*/
+ 	/*width: 100%;*/
+	/*margin: 0 auto;*/
+/*}*/
+body{
+    margin: 0;
+    /*min-width: 1000px;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.header-wrapper {
+    /*max-width: 1200px;*/
+    margin: 10px auto;
+}
+.header {
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+
+@media (min-width: 768px) {
+    .logo {
+        padding: 22px 0;
+    }
+
+    .search-form {
+        padding: 33px 0;
+    }
+    .basket-button {
+        padding: 33px 0;
+    }
+
+}
+@media (max-width: 768px){
+    .logo, .search-form, .basket-button {
+        float: left;
+        padding: 1px 0;
+    }
+}
+
+.search {
+  /* устанавливаем необходимую ширину формы в зависимости от дизайна
+  ** форма без проблем растягивается */
+  /*width: 100%;*/
+
+  /* кнопку отправки будем позиционировать абсолютно,
+  ** поэтому необходимо это свойство */
+  position: relative;
+}
+
+.search input {
+  /* отключаем бордюры у инпутов */
+  border: none;
+}
+
+/* стили для поля ввода */
+.search .input {
+  /* растягиваем поле ввода на всю ширину формы */
+  width: 100%;
+  border: 1px solid #ccc;
+  /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+  ** регулируем высоту формы
+  ** внутренний отступ справа (37px) делаем больше левого,
+  ** т.к. там будет размещена кнопка отправки	*/
+  padding: 11px 37px 8px 15px;
+
+  /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* добавляем внутренние тени */
+  /*box-shadow: inset 0 0 1px rgba(0,0,0,1);*/
+
+  /* закругляем углы */
+  /*border-style: 1px solid #000;*/
+  border-radius: 3px;
+
+  /*background: #EEE;*/
+  font: 14pt 'Roboto Regular', sans-serif;
+  color: #2a0323;
+  outline: none;
+}
+
+::-webkit-input-placeholder {color:#550055;}
+::-moz-placeholder          {color:#550055;}/* Firefox 19+ */
+:-moz-placeholder           {color:#550055;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#550055;}
+
+/* меняем оформление поля ввода при фокусе */
+/*.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+*/
+/* оформляем кнопку отправки */
+.search .submit {
+  border: none;
+  /* позиционируем кнопку абсолютно от правого края формы */
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 37px;
+
+  /* растягиваем кнопку на всю высоту формы */
+  height: 100%;
+
+  cursor: pointer;
+  background: url(../images/search-button.png) 50% no-repeat;
+
+  /* добавляем прозрачность кнопке отправки */
+  opacity: 0.7;
+}
+
+/* при наведении курсора меняем прозрачность кнопки отправки */
+.search .submit:hover {
+  opacity: 1;
+}
+
+/* данное свойство необходимо для того, чтобы в браузерах
+** Chrome и Safari можно было стилизовать инпуты */
+input[type="search"] {
+  -webkit-appearance: none;
+}
+.basket {
+    float: right;
+    margin-top: 0;
+}
+.basket a {
+    display: block;
+    background-color: #550055;
+    padding: 3px 10px 40px 10px;
+    /*margin: 5px 0;*/
+}
+/*.basket div p img {*/
+	/*float: left;*/
+	/*margin-right: 14px;*/
+    /*!*background-color: #550055;*!*/
+    /*padding-right: 6px;*/
+    /*border-right: 1px solid #FFFFFF;*/
+/*}*/
+
+.basket_img {
+    float: left;
+    padding: 9px 10px 9px 0px;
+    border-right: 1px solid #fff;
+
+}
+.basket_text {
+    float: left;
+    padding: 8px 0px 11px 11px;
+    font-size: 13.5pt;
+    font-family: 'Roboto Thin', Arial;
+    font-weight: 100;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+.basket a:hover {
+    background-color: #f242ea;
+}
+.menu-container{
+    width: 100%;
+    background-color: #550055;
+}
+.main-menu {
+	width: 100%;
+    max-width: 1200px;
+	margin:0 auto;
+	background-color: #550055;
+	/*padding: 10px 0;*/
+	overflow: hidden;
+    border: none;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu a{
+    display: block;
+    width: 25%;
+	float: left;
+	padding: 11px 0;
+	font-size: 13.5pt;
+	font-family: 'Roboto Regular', sans-serif;
+    font-weight: 400;
+	color: #FFF;
+	text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-menu a:hover {
+	background-color: #f242ea;
+}
+
+.footer-wrapper {
+    width: 100%;
+    background-color: #150111;
+    padding: 30px 0;
+}
+.footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+.footer {
+    padding: 20px 15px;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+p.footer-headers {
+    font-family: 'Roboto Medium', sans-serif;
+    /*font-weight: 500;*/
+    font-size: 12pt;
+    opacity: 0.7;
+    padding-bottom: 10px;
+}
+.footer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.footer ul li {
+     line-height: 16pt;
+}
+.footer ul a {
+   text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Roboto Light', sans-serif;
+    /*font-weight: 300;*/
+    font-size: 12pt;
+    opacity: 0.7;
+}
+.footer ul a:hover {
+    text-decoration: underline;
+}
+.footer-content {
+    margin-right: 80px;
+    float: left;
+}
+ul.payment-carts {
+    display: block;
+    overflow: hidden;
+}
+ul.payment-carts li {
+
+    float: left;
+    margin-right: 15px;
+}
+.copyrights {
+    float: right;
+}
+.copyrights p {
+    text-align: right;
+    color: #FFFFFF;
+    font-family: 'Roboto Light', sans-serif;
+    /*font-weight: 100;*/
+    font-size: 10.5pt;
+    opacity: 0.7;
+    padding-bottom: 5px;
+}
+
+p.social a  {
+    margin: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+#news {
+	width: 100%;
+}
+#news h3 {
+    text-align: center;
+    color: #2a0323;
+    font-family: 'Roboto Regular', sans-serif;
+    font-weight: 400;
+    font-size: 27pt;
+}
+#new_items {
+    overflow: hidden;
+    width: 100%;
+}
+.new_item {
+	padding-top: 10px;
+    width: 23%;
+    float: left;
+    margin: 0 1%;
+}
+.new_item  {
+	text-decoration: none;
+	color: #000;
+}
+.new_item img {
+	display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.new_item p {
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 14pt;
+    text-align: center;
+    line-height: 10px;
+}
+#catalog_links {
+    margin: 50px 0;
+    overflow: hidden;
+    width: 100%;
+}
+.catalog_link {
+    float: left;
+    width: 48%;
+    height: 250px;
+    background-color: #2a0323;
+    overflow: hidden;
+    margin: 15px 1%;
+}
+.catalog_link_img{
+    float: left;
+    height: 100%;
+    max-width: 30%;
+}
+.catalog_link_img img {
+    height: 100%;
+}
+
+.catalog_link_text {
+    margin: 25px 5%;
+    width: 60%;
+    float: left;
+}
+.catalog_link_text h3 {
+    margin-bottom: 10px;
+    width: 100%;
+    font-family: 'Roboto Light', sans-serif;
+    font-weight: 300;
+    font-size: 24pt;
+    color: #FFFFFF;
+
+}
+.catalog_link_text p {
+    margin: 0;
+    line-height: 20pt;
+    width: 100%;
+    font-family: 'Roboto Thin', sans-serif;
+    font-weight: 100;
+    font-size: 13.5pt;
+    color: #FFFFFF;
+
+}
+.shoes {
+    position: relative;
+}
+
+.shoes img {
+    width: 580px;
+}
+.shoes div {
+    width: 65%;
+    margin: 25px 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 992px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 35%;
+        left: 4%;
+        z-index: 10;
+        /* padding-top: 20px; */
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    }
+
+    .carousel-caption h1 {
+        font-family: 'Roboto Bold', sans-serif;
+        font-weight: 700;
+        font-size: 20pt;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+
+    .carousel-caption p {
+        font-family: 'Roboto Regular', sans-serif;
+        font-weight: 400;
+        font-size: 20pt;
+        line-height: 1em;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 35%;
+        left: 4%;
+        z-index: 10;
+        /* padding-top: 20px; */
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: left;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    }
+
+    .carousel-caption h1 {
+        font-family: 'Roboto Bold', sans-serif;
+        font-weight: 700;
+        font-size: 36pt;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+
+    .carousel-caption p {
+        font-family: 'Roboto Regular', sans-serif;
+        font-weight: 400;
+        font-size: 36pt;
+        line-height: 1em;
+    }
+}
+.navbar-default {
+    background: #550055;
+}
