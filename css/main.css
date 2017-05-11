@@ -375,7 +375,7 @@ p.social a  {
     top: 0px;
     left: 0px;
 }
-@media handheld {
+@media handheld and (max-width: 735px){
     .basket a {
         display: block;
         background-color: #550055;
@@ -394,66 +394,66 @@ p.social a  {
     }
 }
 
-@media (min-width: 992px) {
-    .carousel-caption {
-        position: absolute;
-        right: 15%;
-        bottom: 35%;
-        left: 4%;
-        z-index: 10;
-        /* padding-top: 20px; */
-        padding-bottom: 20px;
-        color: #fff;
-        text-align: left;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    }
+/*@media (min-width: 992px) {*/
+    /*.carousel-caption {*/
+        /*position: absolute;*/
+        /*right: 15%;*/
+        /*bottom: 35%;*/
+        /*left: 4%;*/
+        /*z-index: 10;*/
+        /*!* padding-top: 20px; *!*/
+        /*padding-bottom: 20px;*/
+        /*color: #fff;*/
+        /*text-align: left;*/
+        /*text-shadow: 0 1px 2px rgba(0, 0, 0, .6);*/
+    /*}*/
 
-    .carousel-caption h1 {
-        font-family: 'Roboto Bold', sans-serif;
-        font-weight: 700;
-        font-size: 20pt;
-        margin-bottom: 1em;
-        text-transform: uppercase;
-    }
+    /*.carousel-caption h1 {*/
+        /*font-family: 'Roboto Bold', sans-serif;*/
+        /*font-weight: 700;*/
+        /*font-size: 20pt;*/
+        /*margin-bottom: 1em;*/
+        /*text-transform: uppercase;*/
+    /*}*/
 
-    .carousel-caption p {
-        font-family: 'Roboto Regular', sans-serif;
-        font-weight: 400;
-        font-size: 20pt;
-        line-height: 1em;
-    }
-}
+    /*.carousel-caption p {*/
+        /*font-family: 'Roboto Regular', sans-serif;*/
+        /*font-weight: 400;*/
+        /*font-size: 20pt;*/
+        /*line-height: 1em;*/
+    /*}*/
+/*}*/
 
 
-@media (min-width: 1200px) {
-    .carousel-caption {
-        position: absolute;
-        right: 15%;
-        bottom: 35%;
-        left: 4%;
-        z-index: 10;
-        /* padding-top: 20px; */
-        padding-bottom: 20px;
-        color: #fff;
-        text-align: left;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    }
+/*@media (min-width: 1200px) {*/
+    /*.carousel-caption {*/
+        /*position: absolute;*/
+        /*right: 15%;*/
+        /*bottom: 35%;*/
+        /*left: 4%;*/
+        /*z-index: 10;*/
+        /*!* padding-top: 20px; *!*/
+        /*padding-bottom: 20px;*/
+        /*color: #fff;*/
+        /*text-align: left;*/
+        /*text-shadow: 0 1px 2px rgba(0, 0, 0, .6);*/
+    /*}*/
 
-    .carousel-caption h1 {
-        font-family: 'Roboto Bold', sans-serif;
-        font-weight: 700;
-        font-size: 36pt;
-        margin-bottom: 1em;
-        text-transform: uppercase;
-    }
+    /*.carousel-caption h1 {*/
+        /*font-family: 'Roboto Bold', sans-serif;*/
+        /*font-weight: 700;*/
+        /*font-size: 36pt;*/
+        /*margin-bottom: 1em;*/
+        /*text-transform: uppercase;*/
+    /*}*/
 
-    .carousel-caption p {
-        font-family: 'Roboto Regular', sans-serif;
-        font-weight: 400;
-        font-size: 36pt;
-        line-height: 1em;
-    }
-}
+    /*.carousel-caption p {*/
+        /*font-family: 'Roboto Regular', sans-serif;*/
+        /*font-weight: 400;*/
+        /*font-size: 36pt;*/
+        /*line-height: 1em;*/
+    /*}*/
+/*}*/
 .navbar-default {
     background: #550055;
 }
