@@ -375,7 +375,7 @@ p.social a  {
     top: 0px;
     left: 0px;
 }
-@media all {
+@media (max-width: 750px) {
     .basket a {
         display: block;
         background-color: #550055;
@@ -383,6 +383,7 @@ p.social a  {
         /* margin: 5px 0; */
         width: 44px;
         height: 44px;
+        border-radius: 3px;
     }
     .basket_img {
         float: left;
