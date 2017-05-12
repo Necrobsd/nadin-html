@@ -14,11 +14,6 @@ body{
     /*max-width: 1200px;*/
     margin: 10px auto;
 }
-.header {
-    margin: 0 15px;
-    overflow: hidden;
-}
-
 
 @media (min-width: 768px) {
     .logo {
@@ -130,6 +125,9 @@ input[type="search"] {
     margin-top: 0;
 }
 
+.basket-button {
+    float: right;
+}
 .basket a {
     display: block;
     background-color: #550055;
@@ -137,18 +135,10 @@ input[type="search"] {
     /*margin: 5px 0;*/
 }
 
-/*.basket div p img {*/
-/*float: left;*/
-/*margin-right: 14px;*/
-/*!*background-color: #550055;*!*/
-/*padding-right: 6px;*/
-/*border-right: 1px solid #FFFFFF;*/
-/*}*/
 .basket_img {
     float: left;
     padding: 9px 10px 9px 0px;
     border-right: 1px solid #fff;
-
 }
 
 .basket_text {
@@ -376,6 +366,9 @@ p.social a  {
     left: 0px;
 }
 @media (max-width: 750px) {
+    #header {
+        max-width: 700px;
+    }
 
     .basket a {
         display: block;
@@ -396,6 +389,7 @@ p.social a  {
 }
 
 @media (min-width: 992px) {
+
     .carousel-caption {
         position: absolute;
         right: 15%;
@@ -427,6 +421,17 @@ p.social a  {
 
 
 @media (min-width: 1200px) {
+
+    #header {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .nav {
+        max-width: 1450px;
+        margin: 0 auto;
+    }
+
     .carousel-caption {
         position: absolute;
         right: 15%;
