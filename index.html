@@ -73,121 +73,164 @@
   </div>
 </nav>
 <!----------------------------   СЛАЙДЕР-------------------------------------->
-<div id="carousel" class="carousel slide">
-	<ol class="carousel-indicators">
-		<li class="active" data-target="#carousel" data-slide-to="0"></li>
-		<li data-target="#carousel" data-slide-to="1"></li>
-		<li data-target="#carousel" data-slide-to="2"></li>
-		<li data-target="#carousel" data-slide-to="3"></li>
-	</ol>
-	<div class="carousel-inner">
-		<div class="item active">
-			<img src="images/slider/slider.jpg" alt="">
-			<div class="carousel-caption">
-				<h1>Актуальные тенденции</h1>
-				<p>Весенняя коллекция<br/>верхней одежды</p>
-				<a href="#">Смотреть товары сейчас</a>
-			</div>
-		</div>
-		<div class="item">
-			<img src="images/slider/slider.jpg" alt="">
-			<div class="carousel-caption">
-				<h1>Актуальные тенденции</h1>
-				<p>Весенняя коллекция<br/>верхней одежды</p>
-			</div>
-		</div>
-		<div class="item">
-			<img src="images/slider/slider.jpg" alt="">
-			<div class="carousel-caption">
-				<h1>Актуальные тенденции</h1>
-				<p>Весенняя коллекция<br/>верхней одежды</p>
-			</div>
-		</div>
-		<div class="item">
-			<img src="images/slider/slider.jpg" alt="">
-			<div class="carousel-caption">
-				<h1>Актуальные тенденции</h1>
-				<p>Весенняя коллекция<br/>верхней одежды</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="content">
-	<div id="news">
-		<h3>Новинки</h3>
-		<div id="new_items">
-			<a href="#">
-				<div class="new_item">			
-					<img src="images/glasses.jpg">
-					<p>Очки Amore Mio</p>
-					<p>1520 руб</p>
-				</div>
-			</a>
-			<a href="#">
-				<div class="new_item">
-					<img src="images/dress.jpg">
-					<p>Платье Diani</p>
-					<p>2350 руб</p>
-				</div>
-			</a>
-			<a href="#">
-				<div class="new_item">
-					<img src="images/jamper.jpg">
-					<p>Куртка Yavarsky</p>
-					<p>2650 руб.</p>
-				</div>
-			</a>
-			<a href="#">
-				<div class="new_item">
-					<img src="images/sport.jpg">
-					<p>Спортивный костюм</p>
-					<p>2050 руб.</p>
-				</div>
-			</a>
-		</div>
-	</div>
-	<!-- ###################  ССЫЛКИ НА КАТАЛОГИ ######################-->
-	<div id="catalog_links">
-		<div class="catalog_link">
-			<div class="catalog_link_img">
-				<img src="images/верхняя_одежда.jpg">
-			</div>
-			<div class="catalog_link_text">
-				<h3>Верхняя одежда</h3>
-				<p>У нас вы найдете восхитительную коллекцию пальто</p>
-			</div>
-		</div>
-		<div class="catalog_link shoes">
-			<!--<div class="catalog_link_img">-->
-				<img src="images/обувьLuxe.jpg">
+<!--<div id="carousel" class="carousel slide">-->
+	<!--<ol class="carousel-indicators">-->
+		<!--<li class="active" data-target="#carousel" data-slide-to="0"></li>-->
+		<!--<li data-target="#carousel" data-slide-to="1"></li>-->
+		<!--<li data-target="#carousel" data-slide-to="2"></li>-->
+		<!--<li data-target="#carousel" data-slide-to="3"></li>-->
+	<!--</ol>-->
+	<!--<div class="carousel-inner">-->
+		<!--<div class="item active">-->
+			<!--<img src="images/slider/slider.jpg" alt="">-->
+			<!--<div class="carousel-caption">-->
+				<!--<h1>Актуальные тенденции</h1>-->
+				<!--<p>Весенняя коллекция<br/>верхней одежды</p>-->
+				<!--<a href="#">Смотреть товары сейчас</a>-->
 			<!--</div>-->
-			<div class="catalog_link_text">
-				<h3>Обувь класса LUXE</h3>
-				<p>Туфли elche выполнены из качественной эко-кожи, актуального в этом сезоне <br/>цвета</p>
-			</div>
+		<!--</div>-->
+		<!--<div class="item">-->
+			<!--<img src="images/slider/slider.jpg" alt="">-->
+			<!--<div class="carousel-caption">-->
+				<!--<h1>Актуальные тенденции</h1>-->
+				<!--<p>Весенняя коллекция<br/>верхней одежды</p>-->
+				<!--<a href="#">Смотреть товары сейчас</a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="item">-->
+			<!--<img src="images/slider/slider.jpg" alt="">-->
+			<!--<div class="carousel-caption">-->
+				<!--<h1>Актуальные тенденции</h1>-->
+				<!--<p>Весенняя коллекция<br/>верхней одежды</p>-->
+				<!--<a href="#">Смотреть товары сейчас</a>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="item">-->
+			<!--<img src="images/slider/slider.jpg" alt="">-->
+			<!--<div class="carousel-caption">-->
+				<!--<h1>Актуальные тенденции</h1>-->
+				<!--<p>Весенняя коллекция<br/>верхней одежды</p>-->
+				<!--<a href="#">Смотреть товары сейчас</a>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</div>-->
+
+<!----------------------------------- КОНТЕНТ  -------------------------------------->
+<div class="content container">
+	<div class="row"><h3>Новинки</h3></div>
+	<div class="row">
+		<!--col-md-4 col-sm-3 col-xs-12-->
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a href="#">
+				<img src="images/glasses.jpg">
+				<p>Очки Amore Mio</p>
+				<p>1520 руб</p>
+			</a>
 		</div>
-		<div class="catalog_link">
-			<div class="catalog_link_img">
-				<img src="images/Косметика.jpg">
-			</div>
-			<div class="catalog_link_text">
-				<h3>Косметика</h3>
-				<p>Огромный выбор качественной косметики от различных производителей</p>
-			</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a href="#">
+				<img src="images/dress.jpg">
+				<p>Платье Diani</p>
+				<p>2350 руб</p>
+			</a>
 		</div>
-		<div class="catalog_link">
-			<div class="catalog_link_img">
-				<img src="images/Сумки.jpg">
-			</div>
-			<div class="catalog_link_text">
-				<h3>Сумки</h3>
-				<p>Большая коллекция сумок из самых разных материалов</p>
-			</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a href="#">
+				<img src="images/jamper.jpg">
+				<p>Куртка Yavarsky</p>
+				<p>2650 руб.</p>
+			</a>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<a href="#">
+				<img src="images/sport.jpg">
+				<p>Спортивный костюм</p>
+				<p>2050 руб.</p>
+			</a>
 		</div>
 	</div>
 </div>
+	<!-- ###################  ССЫЛКИ НА КАТАЛОГИ ######################-->
+<div class="content container">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+			<a href="#" class="catalog_link">
+				<img src="images/верхняя_одежда.jpg">
+				<!--<div class="catalog_link_text">-->
+					<h3>Верхняя одежда</h3>
+					<p>У нас вы найдете восхитительную коллекцию пальто</p>
+				<!--</div>-->
+			</a>
+		</div>
+		<!--<div class="col-lg-6 shoes">-->
+			<!--<div class="catalog_link_img">-->
+				<!--<img src="images/обувьLuxe.jpg">-->
+			<!--</div>-->
+			<!--<div class="catalog_link_text">-->
+				<!--<h3>Обувь класса LUXE</h3>-->
+				<!--<p>Туфли elche выполнены из качественной эко-кожи, актуального в этом сезоне <br/>цвета</p>-->
+			<!--</div>-->
+		<!--</div>-->
+		<div class="col-md-6 col-sm-12 catalog_link">
+			<a href="#" class="catalog_link">
+				<img src="images/Косметика.jpg">
+				<div class="catalog_link_text">
+					<h3>Косметика</h3>
+					<p>Огромный выбор качественной косметики от различных производителей</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-6 col-sm-12 catalog_link">
+			<a href="#" class="catalog_link">
+				<img src="images/Сумки.jpg">
+				<div class="catalog_link_text">
+					<h3>Сумки</h3>
+					<p>Большая коллекция сумок из самых разных материалов</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+	<!--<div id="catalog_links">-->
+		<!--<div class="catalog_link">-->
+			<!--<div class="catalog_link_img">-->
+				<!--<img src="images/верхняя_одежда.jpg">-->
+			<!--</div>-->
+			<!--<div class="catalog_link_text">-->
+				<!--<h3>Верхняя одежда</h3>-->
+				<!--<p>У нас вы найдете восхитительную коллекцию пальто</p>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="catalog_link shoes">-->
+			<!--<div class="catalog_link_img">-->
+				<!--<img src="images/обувьLuxe.jpg">-->
+			<!--</div>-->
+			<!--<div class="catalog_link_text">-->
+				<!--<h3>Обувь класса LUXE</h3>-->
+				<!--<p>Туфли elche выполнены из качественной эко-кожи, актуального в этом сезоне <br/>цвета</p>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="catalog_link">-->
+			<!--<div class="catalog_link_img">-->
+				<!--<img src="images/Косметика.jpg">-->
+			<!--</div>-->
+			<!--<div class="catalog_link_text">-->
+				<!--<h3>Косметика</h3>-->
+				<!--<p>Огромный выбор качественной косметики от различных производителей</p>-->
+			<!--</div>-->
+		<!--</div>-->
+		<!--<div class="catalog_link">-->
+			<!--<div class="catalog_link_img">-->
+				<!--<img src="images/Сумки.jpg">-->
+			<!--</div>-->
+			<!--<div class="catalog_link_text">-->
+				<!--<h3>Сумки</h3>-->
+				<!--<p>Большая коллекция сумок из самых разных материалов</p>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</div>-->
 
 
 
@@ -248,7 +291,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 		  // Инициализирует карусель
-		$('#carousel').carousel({interval: 996000});
+		$('#carousel').carousel({interval:6000});
 		});
 	</script>
 </body>

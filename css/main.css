@@ -264,75 +264,57 @@ p.social a  {
     font-size: 18px;
 }
 
-.content {
-    max-width: 1200px;
-    margin: 50px auto;
+.content a{
+    text-decoration: none;
+	color: #000;
+    text-align: center;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 14pt;
+    text-align: center;
+    line-height: 15px;
 }
-#news {
-	width: 100%;
+.content img {
+    display: block;
+    margin: 15px auto;
+    width: 100%;
+    max-width: 270px;
 }
-#news h3 {
+.content h3 {
+    margin-top: 70px;
+    margin-bottom: 40px;
     text-align: center;
     color: #2a0323;
     font-family: 'Roboto Regular', sans-serif;
     font-weight: 400;
     font-size: 27pt;
 }
-#new_items {
-    overflow: hidden;
-    width: 100%;
-}
-.new_item {
-	padding-top: 10px;
-    width: 23%;
-    float: left;
-    margin: 0 1%;
-}
-.new_item  {
-	text-decoration: none;
-	color: #000;
-}
-.new_item img {
-	display: block;
-    max-width: 100%;
-    margin: 0 auto;
-    
-}
 
-.new_item p {
-    font-family: 'Roboto Light', sans-serif;
-    font-size: 14pt;
-    text-align: center;
-    line-height: 10px;
-}
-#catalog_links {
-    margin: 50px 0;
-    overflow: hidden;
-    width: 100%;
-}
-.catalog_link {
+a.catalog_link {
+    text-align: left;
+    margin: 15px 0;
+    padding-right: 20px;
     float: left;
-    width: 48%;
-    height: 250px;
+    max-width: 570px;
     background-color: #2a0323;
-    overflow: hidden;
-    margin: 15px 1%;
+    line-height: 20pt;
+    width: 100%;
+    font-family: 'Roboto Thin', sans-serif;
+    font-weight: 100;
+    font-size: 13.5pt;
+    color: #FFFFFF;
 }
-.catalog_link_img{
+a.catalog_link>img {
+    margin: 0;
+    margin-right: 20px;
+    display: block;
     float: left;
     height: 100%;
     max-width: 30%;
 }
-.catalog_link_img img {
-    height: 100%;
-}
 
-.catalog_link_text {
-    margin: 25px 5%;
-    width: 60%;
-    float: left;
-}
-.catalog_link_text h3 {
+a.catalog_link h3 {
+    text-align: left;
+    margin-top: 13%;
     margin-bottom: 10px;
     width: 100%;
     font-family: 'Roboto Light', sans-serif;
@@ -349,7 +331,6 @@ p.social a  {
     font-weight: 100;
     font-size: 13.5pt;
     color: #FFFFFF;
-
 }
 .shoes {
     position: relative;
@@ -398,6 +379,9 @@ p.social a  {
 
 @media (min-width: 768px) {
     #header {
+        max-width: 80%;
+    }
+    #content{
         max-width: 80%;
     }
 }
