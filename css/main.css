@@ -172,7 +172,8 @@ input[type="search"] {
 }
 
 
-.footer-wrapper {
+#footer-wrapper {
+    margin-top: 50px;
     width: 100%;
     background-color: #150111;
     padding: 50px 0;
@@ -384,6 +385,12 @@ p.social a  {
     .logo {
         padding: 33px 0;
     }
+    #header, #footer {
+        max-width: 80%;
+    }
+    .content{
+        max-width: 80%;
+    }
 
     .search-form {
         padding: 33px 0;
@@ -401,10 +408,12 @@ p.social a  {
     .copyrights {
         display: none;
     }
+    #footer-wrapper {
+        margin-top: 20px;
+    }
 }
 
 @media (min-width: 992px) {
-
     .logo {
         padding: 22px 0;
     }
@@ -433,15 +442,6 @@ p.social a  {
     }
     .payment-cards {
         display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    #header, #footer {
-        max-width: 80%;
-    }
-    .content{
-        max-width: 80%;
     }
 }
 
