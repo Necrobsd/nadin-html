@@ -408,9 +408,6 @@ p.social a  {
     .copyrights {
         display: none;
     }
-    #footer-wrapper {
-        margin-top: 20px;
-    }
 }
 
 @media (min-width: 992px) {
