@@ -4,7 +4,7 @@
 /*}*/
 body{
     margin: 0;
-    /*min-width: 1000px;*/
+    min-width: 375px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -13,26 +13,6 @@ body{
 .header-wrapper {
     /*max-width: 1200px;*/
     margin: 10px auto;
-}
-
-@media (min-width: 768px) {
-    .logo {
-        padding: 33px 0;
-    }
-
-    .search-form {
-        padding: 33px 0;
-    }
-    .basket-button {
-        padding: 33px 0;
-    }
-
-}
-@media (max-width: 768px){
-    .logo, .search-form, .basket-button {
-        float: left;
-        padding: 1px 0;
-    }
 }
 
 .search {
@@ -264,6 +244,9 @@ p.social a  {
     font-size: 18px;
 }
 
+.content {
+    margin-top: 70px;
+}
 .content a{
     text-decoration: none;
 	color: #000;
@@ -280,7 +263,6 @@ p.social a  {
     max-width: 270px;
 }
 .content h3 {
-    margin-top: 70px;
     margin-bottom: 40px;
     text-align: center;
     color: #2a0323;
@@ -289,33 +271,33 @@ p.social a  {
     font-size: 27pt;
 }
 
-a.catalog_link {
-    text-align: left;
-    margin: 15px 0;
-    padding-right: 20px;
+.catalog_link {
+    width: 100%;
+    margin: 15px auto;
     float: left;
+    padding-right: 20px;
     max-width: 570px;
     background-color: #2a0323;
     line-height: 20pt;
-    width: 100%;
+    text-align: left;
     font-family: 'Roboto Thin', sans-serif;
     font-weight: 100;
     font-size: 13.5pt;
     color: #FFFFFF;
 }
-a.catalog_link>img {
-    margin: 0;
-    margin-right: 20px;
+.catalog_link>img {
+    margin: 0 20px 0 0;
     display: block;
     float: left;
     height: 100%;
     max-width: 30%;
 }
 
-a.catalog_link h3 {
+.catalog_link h3 {
     text-align: left;
-    margin-top: 13%;
-    margin-bottom: 10px;
+    padding-top: 10%;
+    padding-bottom: 15px;
+    margin:0;
     width: 100%;
     font-family: 'Roboto Light', sans-serif;
     font-weight: 300;
@@ -323,87 +305,36 @@ a.catalog_link h3 {
     color: #FFFFFF;
 
 }
-.catalog_link_text p {
-    margin: 0;
-    line-height: 20pt;
-    width: 100%;
-    font-family: 'Roboto Thin', sans-serif;
-    font-weight: 100;
-    font-size: 13.5pt;
-    color: #FFFFFF;
-}
+
 .shoes {
+    padding-right: 0;
     position: relative;
 }
 
-.shoes img {
-    width: 580px;
+.shoes>img {
+    margin: 0;
+    height: 100%;
+    max-width: 100%;
 }
-.shoes div {
-    width: 65%;
-    margin: 25px 100px;
+.shoes h3 {
     position: absolute;
     top: 0px;
     left: 0px;
+    padding-left: 15%;
+}
+.shoes p {
+    position: absolute;
+    top: 45%;
+    left: 0px;
+    padding-left: 15%;
 }
 
-@media (min-width: 992px) {
 
-    .logo {
-        padding: 22px 0;
-    }
-
-}
-@media (max-width: 992px) {
-    .logo a img {
-        width: 150px;
-    }
-
-    .basket a {
-        display: block;
-        background-color: #550055;
-        padding: 12px;
-        width: 44px;
-        height: 44px;
-        border-radius: 3px;
-    }
-    .basket_img {
-        float: left;
-        padding: 0;
-        border: none;
-    }
-    .basket_text {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    #header {
-        max-width: 80%;
-    }
-    #content{
-        max-width: 80%;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    /*#header {*/
-        /*max-width: 1200px;*/
-        /*margin: 0 auto;*/
-    /*}*/
-
-    .nav {
-        max-width: 1450px;
-        margin: 0 auto;
-    }
-}
 .navbar-default {
     background: #550055;
     border: none;
     border-radius: 0;
 }
-
 
 .nav>li>a {
     position: relative;
@@ -416,7 +347,8 @@ a.catalog_link h3 {
 	color: #FFF;
 }
 
-.nav>li>a:hover {
+.nav>li>a:hover,
+.nav>li>a:focus {
 	background-color: #f242ea;
 }
 .navbar {
@@ -460,14 +392,4 @@ a.catalog_link h3 {
     color: #FFFFFF;
     display: inline-block;
 }
-@media (max-width: 425px) {
-    .carousel-caption {
-        bottom: -15px;
-    }
-    .carousel-indicators {
-        display: none;
-    }
-    .carousel-caption a {
-        padding: 5px;
-    }
-}
+
