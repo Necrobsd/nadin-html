@@ -477,4 +477,17 @@ p.social a  {
         font-size: 10pt;
         line-height: 15pt;
     }
+    .content {
+        margin-top: 15px;
+    }
+    .content > div.row > h3 {
+        margin-bottom: 10px;
+        font-size: 17pt;
+    }
+    .content a {
+        line-height: 10px;
+        font-size: 11pt;
+    }
+
+
 }
