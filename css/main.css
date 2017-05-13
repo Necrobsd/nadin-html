@@ -259,7 +259,7 @@ p.social a  {
 .catalog_link {
     width: 100%;
     margin: 15px auto;
-    float: left;
+    overflow: hidden;
     padding-right: 20px;
     max-width: 570px;
     background-color: #2a0323;
