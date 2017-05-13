@@ -288,7 +288,9 @@ p.social a  {
     font-weight: 300;
     font-size: 24pt;
     color: #FFFFFF;
-
+}
+.catalog_link p {
+    padding: 0;
 }
 
 .shoes {
