@@ -254,7 +254,7 @@ p.social a  {
     color: #2a0323;
     font-family: 'Roboto Regular', sans-serif;
     font-weight: 400;
-    font-size: 27pt;
+    font-size: 24pt;
 }
 
 .catalog_link {
@@ -489,6 +489,23 @@ p.social a  {
     }
 }
 
+ul.catalog_sorter {
+    position: absolute;
+    top: 34px;
+    right: 10px;
+}
+ul.catalog_sorter li {
+    float: left;
+    padding: 0 5px;
+}
+ul.catalog_sorter li a {
+    font: 9pt 'Roboto';
+}
+ul.catalog_sorter li a:hover,
+ul.catalog_sorter li a.active {
+    color: #f242ea;
+}
+
 /*         -------------------сайдбар----------------------     */
 
 ul.left-menu { padding:0;margin:0; }
@@ -519,4 +536,11 @@ h3.left:after {
   margin-top: -2px;
   margin-left: 10px;
   opacity: 0.5;
+}
+
+.catalog a {
+    font-size: 12pt;
+}
+.catalog a p span {
+    font-family: 'Roboto Medium';
 }
