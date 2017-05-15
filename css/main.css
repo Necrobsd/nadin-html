@@ -516,8 +516,8 @@ ul.left-menu li ul li a {font: 12pt 'Roboto Light';}
 ul.left-menu li ul li a:hover, 
 ul.left-menu li ul li a.active {font-family: 'Roboto Medium'; color: #f242ea;}
 ul#leftmenu a { padding-left:0;}
-ul#leftmenu a.collapsed { background:url('http://savepic.net/5545096.gif') left 6px no-repeat; }
-ul#leftmenu a.expanded { background:url('http://savepic.net/5564555.gif') left 6px no-repeat; }
+ul#leftmenu a.collapsed {  }
+ul#leftmenu a.expanded {  }
 ul#leftmenu a + ul { display: none;}
 
 h3.left {
