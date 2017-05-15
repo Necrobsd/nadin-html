@@ -398,7 +398,9 @@ p.social a  {
     .basket-button {
         padding: 33px 0;
     }
-
+    #catalog_menu {
+        display: none!important;
+    }
 }
 @media (max-width: 767px){
     .logo, .search-form, .basket-button {
@@ -515,6 +517,16 @@ ul.left-menu li ul li {padding:  2px 0;}
 ul.left-menu li ul li a {font: 12pt 'Roboto Light';}
 ul.left-menu li ul li a:hover, 
 ul.left-menu li ul li a.active {font-family: 'Roboto Medium'; color: #f242ea;}
+
+ul#catalog_menu_items { padding:0;margin:0; }
+ul#catalog_menu_items li { padding:0 20px;margin:0;list-style:none;}
+ul.catalog_menu_items li ul { padding:0;margin:15px 0 15px 40px; }
+ul.catalog_menu_items li ul li {padding:  2px 0;}
+ul#catalog_menu_items li ul li a {font: 12pt 'Roboto Light'; color: #fff; text-decoration: none;}
+ul#catalog_menu_items li ul li a:hover, 
+ul#catalog_menu_items li ul li a.active {font-family: 'Roboto Medium';}
+
+
 ul#leftmenu a { padding-left:0;}
 ul#leftmenu a.collapsed {  }
 ul#leftmenu a.expanded {  }
@@ -605,3 +617,5 @@ position: absolute;
     cursor: default;
     background-color: #550055;
 }
+
+    

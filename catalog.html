@@ -53,7 +53,7 @@
   <!-- Бренд и переключатель, который вызывает меню на мобильных устройствах -->
   <div class="navbar-header">
     <!-- Кнопка с полосочками, которая открывает меню на мобильных устройствах -->
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu,#catalog_menu" aria-expanded="false">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -71,13 +71,59 @@
 		<li><a href="#">ПОМОЩЬ</a></li>
     </ul>
   </div>
+  <div id="catalog_menu" class="navbar-collapse collapse">
+		<ul id="catalog_menu_items" class="nav nav-justified">
+		  <li><a href="#0">Одежда для женщин</a>
+		  	<ul class="collapse">
+		  		<li><a href="#">Брюки, джинсы, лоссины</a></li>
+		  		<li><a href="#">Шорты</a></li>
+		  		<li><a href="#">Комбинезоны</a></li>
+		  		<li><a href="#">Юбки</a></li>
+		  		<li><a href="#" class="active">Свитера, кофты, рубашки</a></li>
+		  		<li><a href="#">Футболки</a></li>
+		  		<li><a href="#">Платья</a></li>
+		  		<li><a href="#">Спортивная одежда</a></li>
+		  		<li><a href="#">Куртки, жилетки, пальто</a></li>
+		  		<li><a href="#">Костюмы</a></li>
+		  		<li><a href="#">Кардиганы, пиджаки</a></li>
+		  		<li><a href="#">Купальники, боди</a></li>
+		  		<li><a href="#">Нижнее белье</a></li>
+		  		<li><a href="#">Мама и дочка</a></li>
+    		</ul>
+    	  </li>
+      	  <li><a href="#">Одежда для женщин Size+</a>
+			  <ul class="collapse">
+		  		<li><a href="#">Брюки, джинсы, лоссины</a></li>
+		  		<li><a href="#">Шорты</a></li>
+		  		<li><a href="#">Комбинезоны</a></li>
+		  		<li><a href="#">Юбки</a></li>
+		  		<li><a href="#">Свитера, кофты, рубашки</a></li>
+		  		<li><a href="#">Футболки</a></li>
+		  		<li><a href="#">Платья</a></li>
+		  		<li><a href="#">Спортивная одежда</a></li>
+		  		<li><a href="#">Куртки, жилетки, пальто</a></li>
+		  		<li><a href="#">Костюмы</a></li>
+		  		<li><a href="#">Кардиганы, пиджаки</a></li>
+		  		<li><a href="#">Купальники, боди</a></li>
+		  		<li><a href="#">Нижнее белье</a></li>
+		  		<li><a href="#">Мама и дочка</a></li>
+    		</ul>
+		  </li>
+	      <li><a href="#">Детская одежда</a></li>
+	      <li><a href="#">Аксессуары</a></li>
+	      <li><a href="#">Косметика и парфюмерия</a></li>
+	      <li><a href="#">Обувь</a></li>
+	      <li><a href="#">Сумки и кошельки</a></li>
+	      <li><a href="#">Спальные принадлежности</a></li>
+    	</ul>
+  </div>
 </nav>
 
 <!----------------------------------- КОНТЕНТ  -------------------------------------->
 <div class="content container">
 	<div class="row">
 		<!-------------------- ЛЕВАЯ КОЛОНКА МЕНЮ ---------------------->
-		<aside class="col-xs-4">
+		<aside id="l-menu" class="col-sm-4 col-xs-0 collapse navbar-collapse">
 		<h3 class="left">Каталог</h3>
 		<ul id="leftmenu" class="left-menu">
 		  <li><a href="#0">Одежда для женщин</a>
@@ -125,7 +171,7 @@
     	</ul>
 		</aside>
 		<!-------------------- СОДЕРЖИМОЕ КАТАЛОГА ---------------------->
-		<div class="col-xs-8 catalog">
+		<div class="col-sm-8 col-xs-12 catalog">
 			<h3 class="left">Свитера, кофты, рубашки</h3>
 			<ul class="catalog_sorter"><li><a href="#" class="active">Все</a></li><li><a href="#">Новинки</a></li><li><a href="#">Популярное</a></li></ul>
 			<div class="row">
@@ -307,7 +353,7 @@
 	<script>
 	   $(function ()
 		{
-		      $('ul#leftmenu ul').each(function(index, el) {
+		      $('ul#leftmenu ul, ul#catalog_menu_items ul').each(function(index, el) {
 		        var a = $(this).prev();
 		        a.addClass('collapsed').click(function() {
 		          $(el).slideToggle(200, function () {
