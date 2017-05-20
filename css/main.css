@@ -231,7 +231,7 @@ p.social a  {
 }
 
 .content {
-    margin-top: 70px;
+    margin-top: 60px;
 }
 .content a{
     text-decoration: none;
@@ -422,6 +422,9 @@ p.social a  {
     .logo a img {
         width: 150px;
     }
+    #l-menu {
+        display: none;
+    }
 
     .basket a {
         display: block;
@@ -463,13 +466,13 @@ p.social a  {
         right: 10px;
     }
 }
-
-@media (min-width: 1200px) {
-    .nav {
-        max-width: 1450px;
-        margin: 0 auto;
+ul.catalog_sorter {
+        list-style: none;
+        position: absolute;
+        top: 28px;
+        right: 10px;
     }
-}
+
 @media (max-width: 425px) {
     .carousel-caption {
         bottom: -15px;
@@ -500,6 +503,10 @@ p.social a  {
     }
 }
 @media (min-width: 1200px) {
+    .nav {
+        max-width: 1450px;
+        margin: 0 auto;
+    }
 
     ul.catalog_sorter {
         list-style: none;
@@ -641,7 +648,7 @@ position: absolute;
     display: block;
     font: 13.5pt 'Roboto Bold';
     color: #ffffff;
-        position: relative;
+    position: relative;
     float: left;
     width: 10.3%;
     margin: 0.625%;
@@ -654,6 +661,7 @@ position: absolute;
     margin-right: -15px;
 }
 #discounter a img{
+
     margin: 0;
     width: 100%;
     max-width: 100px;
@@ -669,11 +677,28 @@ position: absolute;
     background-color: #550055;
     font: 13.5pt 'Roboto Bold';
 }
-
+#discounter a span {
+    display: none;
+    font: 12pt 'Roboto Medium';
+    color: #FFFFFF;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    margin: 0 10px;
+}
+#discounter a div {
+    width: 93%;
+}
+#discounter a div:hover {
+    background-color: #e09dd9;
+}
 #discounter a:hover p {
     display: none;
 }
 #discounter a:hover img {
-    fill: #f242ea;
-    opacity: 0.5;
+    mix-blend-mode: multiply;
+  	opacity: 0.5;
+}
+#discounter a:hover span {
+    display: inline;
 }
