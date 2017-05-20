@@ -10,10 +10,6 @@ body{
     font-size: 12px;
     color: #FFFFFF;
 }
-.header-wrapper {
-    /*max-width: 1200px;*/
-    margin: 10px auto;
-}
 
 .logo a img {
     width: 200px;
@@ -347,6 +343,10 @@ p.social a  {
     margin: 0;
 }
 
+#carousel {
+    max-width: 1920px;
+    margin: 0 auto;
+}
 .carousel-caption {
     position: absolute;
     right: 15%;
@@ -363,7 +363,7 @@ p.social a  {
 .carousel-caption h1 {
     font-family: 'Roboto Bold', sans-serif;
     font-weight: 700;
-    font-size: calc(1rem + 1.5vw);
+    font-size: 36pt;
     margin-bottom: 1em;
     text-transform: uppercase;
 }
@@ -371,11 +371,11 @@ p.social a  {
 .carousel-caption p {
     font-family: 'Roboto Regular', sans-serif;
     font-weight: 400;
-    font-size: calc(1rem + 1.5vw);
+    font-size: 36pt;
     line-height: 1em;
 }
 .carousel-caption a {
-    font-size: calc(1rem + 0.1vw);
+    font-size: 13.5pt;
     margin-top: 4%;
     text-decoration: none;
     background-color: #f242ea;
@@ -411,7 +411,13 @@ p.social a  {
         float: left;
         padding: 1px 0;
     }
+    .basket div {
+        display: none;
+    }
     .copyrights {
+        display: none;
+    }
+    #carousel {
         display: none;
     }
 }
@@ -462,15 +468,7 @@ ul.catalog_sorter {
     }
 
 @media (max-width: 425px) {
-    .carousel-caption {
-        bottom: -15px;
-    }
-    .carousel-indicators {
-        display: none;
-    }
-    .carousel-caption a {
-        padding: 5px;
-    }
+
     .catalog_link h3{
         font-size: 15pt;
     }
