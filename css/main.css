@@ -15,6 +15,10 @@ body{
     margin: 10px auto;
 }
 
+.logo a img {
+    width: 70%;
+}
+
 .search {
   /* устанавливаем необходимую ширину формы в зависимости от дизайна
   ** форма без проблем растягивается */
@@ -111,24 +115,24 @@ input[type="search"] {
 .basket a {
     display: block;
     background-color: #550055;
-    padding: 3px 10px 40px 10px;
-    /*margin: 5px 0;*/
+    padding: 0px 0 44px 0;
 }
-
-.basket_img {
+.basket a img {
+    margin: 12px;
     float: left;
-    padding: 9px 10px 9px 0px;
-    border-right: 1px solid #fff;
+    display: block;
 }
-
-.basket_text {
+.basket a div {
     float: left;
-    padding: 8px 0px 11px 11px;
-    font-size: 13.5pt;
+    border-left: 1px solid #fff;
+}
+.basket a div p {
+    padding: 10px 20px;
+    font-size: 13pt;
     font-family: 'Roboto Thin', Arial;
     font-weight: 100;
     color: #FFFFFF;
-    margin: 0 10px;
+    margin: 0;
 }
 
 .basket a:hover {
@@ -426,22 +430,6 @@ p.social a  {
         display: none;
     }
 
-    .basket a {
-        display: block;
-        background-color: #550055;
-        padding: 12px;
-        width: 44px;
-        height: 44px;
-        border-radius: 3px;
-    }
-    .basket_img {
-        float: left;
-        padding: 0;
-        border: none;
-    }
-    .basket_text {
-        display: none;
-    }
     .payment-cards {
         display: none;
     }
