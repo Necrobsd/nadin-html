@@ -420,11 +420,19 @@ p.social a  {
     #carousel {
         display: none;
     }
+    #discounter a div span {
+        margin: 0 5px;
+        font: 10pt 'Roboto Medium';
+    }
 }
 
 @media (min-width: 992px) {
     .logo {
         padding: 29px 0;
+    }
+    #discounter a div span {
+        margin: 0 12px;
+        font: 12pt 'Roboto Medium';
     }
 }
 
@@ -663,14 +671,12 @@ position: absolute;
     background-color: #550055;
     font: 13.5pt 'Roboto Bold';
 }
-#discounter a span {
+#discounter a div span {
     display: none;
-    font: 12pt 'Roboto Medium';
     color: #FFFFFF;
     position: absolute;
     top: 35%;
     left: 0;
-    margin: 0 10px;
 }
 #discounter a div {
     width: 93%;
