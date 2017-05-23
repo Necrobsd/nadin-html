@@ -635,34 +635,46 @@ position: absolute;
     background-color: #550055;
 }
 
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
 #discounter {
     overflow: hidden;
 }
-#discounter a {
+.bx-wrapper a {
     display: block;
     font: 13.5pt 'Roboto Bold';
     color: #ffffff;
     position: relative;
-    float: left;
-    width: 10.3%;
-    margin: 0.625%;
-}
-
-#discounter a:first-child{
-    margin-left: -15px;
-}
-#discounter a:last-child{
-    margin-right: -15px;
-}
-#discounter a img{
-
-    margin: 0;
+    /*float: left;*/
     width: 100%;
-    max-width: 100px;
-    max-height: 100px;
+    /*margin: 0.625%;*/
+}
+
+/*#discounter a:first-child{*/
+    /*margin-left: -15px;*/
+/*}*/
+/*#discounter a:last-child{*/
+    /*margin-right: -15px;*/
+/*}*/
+.bx-wrapper a img{
+
+    /*margin: 0;*/
+    /*width: 100%;*/
+    /*max-width: 100px;*/
+    /*max-height: 100px;*/
     display: block;
 }
-#discounter a p {
+.bx-wrapper a p {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -671,27 +683,28 @@ position: absolute;
     background-color: #550055;
     font: 13.5pt 'Roboto Bold';
 }
-#discounter a div span {
+.bx-wrapper a div span {
+    text-align: center;
     display: none;
     color: #FFFFFF;
     position: absolute;
     top: 35%;
     left: 0;
 }
-#discounter a div {
-    width: 93%;
-}
-#discounter a div:hover {
+/*#discounter a div {*/
+    /*width: 93%;*/
+/*}*/
+.bx-wrapper a div:hover {
     background-color: #e09dd9;
 }
-#discounter a:hover p {
+.bx-wrapper a:hover p {
     display: none;
 }
-#discounter a:hover img {
+.bx-wrapper a:hover img {
     mix-blend-mode: multiply;
   	opacity: 0.5;
 }
-#discounter a:hover span {
+.bx-wrapper a:hover span {
     display: inline;
 }
 
