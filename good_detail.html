@@ -196,20 +196,23 @@
 			<form action="">
 				<h3>Кардиган</h3>
 				<p class="price">2580 руб.</p>
-				<a href="#">Определите свой размер</a>
-
-				<label class="good_size">
-					<span>XS</span>
-					<input id="size", name="size", type="radio", value="XS" >
-				</label>
-				<label class="good_size active">
-					<span>S</span>
-					<input id="size", name="size", type="radio", value="XS" >
-				</label>
-				<label class="good_size">
-					<span>M</span>
-					<input id="size", name="size", type="radio", value="XS" >
-				</label>
+				<div id="size-table">
+					<a href="#">Определите свой размер</a>
+					<label class="good_size">
+						<input name="size", type="radio", value="XS" ><span>XS</span>
+					</label>
+					<label class="good_size">
+						<input name="size", type="radio", value="S" ><span>S</span>
+					</label>
+					<label class="good_size">
+						<input name="size", type="radio", value="M" ><span>M</span>
+					</label>
+				</div>
+				<div class="add-to-basket">
+					<input type="submit" value="Добавить в корзину">
+				</div>
+				<h4>Описание товара:</h4>
+				<p>Суперпупер кардиган, из приятной ткани. Сделает вас стройной, даже если вы толстушка :)</p>
 			</form>
 		</div>
 	</div>
