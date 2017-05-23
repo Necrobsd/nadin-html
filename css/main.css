@@ -347,14 +347,19 @@ p.social a  {
     max-width: 1920px;
     margin: 0 auto;
 }
+.carousel-indicators {
+        bottom: 2%;
+    }
 .carousel-caption {
+    max-width: 1170px;
+    margin: 0 auto;
     position: absolute;
-    right: 15%;
-    bottom: 20%;
-    left: 10%;
+    right: 0;
+    bottom: 10%;
+    left: 0;
     z-index: 10;
     /* padding-top: 20px; */
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     color: #fff;
     text-align: left;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
@@ -363,7 +368,7 @@ p.social a  {
 .carousel-caption h1 {
     font-family: 'Roboto Bold', sans-serif;
     font-weight: 700;
-    font-size: 36pt;
+    font-size: 3vw;
     margin-bottom: 1em;
     text-transform: uppercase;
 }
@@ -371,11 +376,11 @@ p.social a  {
 .carousel-caption p {
     font-family: 'Roboto Regular', sans-serif;
     font-weight: 400;
-    font-size: 36pt;
+    font-size: 3vw;
     line-height: 1em;
 }
 .carousel-caption a {
-    font-size: 13.5pt;
+    font-size: 1.3vw;
     margin-top: 4%;
     text-decoration: none;
     background-color: #f242ea;
@@ -389,12 +394,13 @@ p.social a  {
     .logo {
         padding: 36px 0;
     }
-    #header, #footer {
+    #header, #footer,.carousel-caption {
         max-width: 80%;
     }
     .content{
         max-width: 80%;
     }
+
 
     .search-form {
         padding: 33px 0;
@@ -524,7 +530,14 @@ ul.catalog_sorter {
         color: #f242ea;
     }
 
-
+@media (min-width: 1400px) {
+    .carousel-caption {
+        max-width: 1170px;
+    }
+    .carousel-caption h1, .carousel-caption p {
+        font-size: 36pt;
+    }
+}
 /*         -------------------сайдбар----------------------     */
 
 ul.left-menu { padding:0;margin:0; }
