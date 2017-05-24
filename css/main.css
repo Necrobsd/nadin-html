@@ -477,12 +477,6 @@ p.social a  {
         right: 10px;
     }
 }
-ul.catalog_sorter {
-        list-style: none;
-        position: absolute;
-        top: 28px;
-        right: 10px;
-    }
 
 @media (max-width: 425px) {
 
@@ -511,28 +505,7 @@ ul.catalog_sorter {
         max-width: 1450px;
         margin: 0 auto;
     }
-
-    ul.catalog_sorter {
-        list-style: none;
-        position: absolute;
-        top: 34px;
-        right: 10px;
-    }
 }
-
-    ul.catalog_sorter li {
-        float: left;
-        padding: 0 5px;
-    }
-
-    ul.catalog_sorter li a {
-        font: 9pt 'Roboto';
-    }
-
-    ul.catalog_sorter li a:hover,
-    ul.catalog_sorter li a.active {
-        color: #f242ea;
-    }
 
 @media (min-width: 1400px) {
     .carousel-caption {
@@ -591,6 +564,27 @@ h3.left:after {
     font-family: 'Roboto Medium';
 }
 
+ul.catalog_sorter {
+        padding-left: 17px;
+        list-style: none;
+        position: absolute;
+        bottom: -8px;
+        right: 0px;
+        top: inherit;
+    }
+ul.catalog_sorter li {
+    float: left;
+    padding: 0 5px;
+}
+
+ul.catalog_sorter li a {
+    font: 9pt 'Roboto';
+}
+
+ul.catalog_sorter li a:hover,
+ul.catalog_sorter li a.active {
+    color: #f242ea;
+}
 /*-------------------------   Пагинация   -----------------------*/
 .paginator {
     position: relative;
