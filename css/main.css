@@ -11,6 +11,10 @@ body{
     color: #FFFFFF;
 }
 
+#header .row {
+    margin-left: 0;
+    margin-right: 0;
+}
 .logo a img {
     width: 200px;
 }
@@ -719,15 +723,13 @@ position: absolute;
 }
 
 .good_card img {
-    margin: 0;
-    max-width: 60%;
+    margin: 0 0 15px 0;
+    max-width: 100%;
     float: left;
 }
-.good_card > form {
-    max-width: 40%;
+.good_card  form {
     color: #000000;
     float: left;
-    padding-left: 30px;
 }
 .good_card form h3 {
     color: #000000;
