@@ -115,10 +115,10 @@ input[type="search"] {
 .basket a {
     display: block;
     background-color: #550055;
-    padding: 0px 0 44px 0;
+    padding: 0px 0 43px 0;
 }
 .basket a img {
-    margin: 12px;
+    margin: 11px;
     float: left;
     display: block;
 }
@@ -127,7 +127,7 @@ input[type="search"] {
     border-left: 1px solid #fff;
 }
 .basket a div p {
-    padding: 10px 20px;
+    padding: 9px 20px;
     font-size: 13pt;
     font-family: 'Roboto Thin', Arial;
     font-weight: 100;
@@ -144,7 +144,7 @@ input[type="search"] {
     background-color: #550055;
 }
 .main-menu {
-	width: 100%;
+	width: 92%;
     max-width: 1200px;
 	margin:0 auto;
 	background-color: #550055;
@@ -321,32 +321,6 @@ p.social a  {
     padding-left: 15%;
 }
 
-
-.navbar-default {
-    background: #550055;
-    border: none;
-    border-radius: 0;
-}
-
-.nav>li>a {
-    position: relative;
-    display: block;
-    padding: 12px 15px;
-    text-transform: uppercase;
-    font-size: 13.5pt;
-	font-family: 'Roboto Regular', sans-serif;
-    font-weight: 400;
-	color: #FFF;
-}
-
-.nav>li>a:hover,
-.nav>li>a:focus {
-	background-color: #f242ea;
-}
-.navbar {
-    margin: 0;
-}
-
 #carousel {
     max-width: 1920px;
     margin: 0 auto;
@@ -355,7 +329,8 @@ p.social a  {
         bottom: 2%;
     }
 .carousel-caption {
-    max-width: 1170px;
+    /*max-width: 1170px;*/
+    width: 1170px;
     margin: 0 auto;
     position: absolute;
     right: 0;
@@ -398,13 +373,18 @@ p.social a  {
     .logo {
         padding: 36px 0;
     }
-    #header, #footer,.carousel-caption {
+    #header, #footer {
         max-width: 80%;
     }
     .content{
         max-width: 80%;
     }
-
+    .carousel-caption {
+        width: 80%;
+    }
+    .main-menu {
+        width: 87%;
+    }
 
     .search-form {
         padding: 33px 0;
@@ -442,6 +422,9 @@ p.social a  {
     #discounter a div span {
         margin: 0 12px;
         font: 12pt 'Roboto Medium';
+    }
+    .main-menu {
+        width: 92%;
     }
 }
 
@@ -501,15 +484,15 @@ p.social a  {
 
 }
 @media (min-width: 1200px) {
-    .nav {
-        max-width: 1450px;
-        margin: 0 auto;
+    .main-menu {
+        max-width: 1410px;
+        width: 96%;
     }
 }
 
 @media (min-width: 1400px) {
     .carousel-caption {
-        max-width: 1170px;
+        width: 1170px;
     }
     .carousel-caption h1, .carousel-caption p {
         font-size: 36pt;
@@ -738,7 +721,7 @@ position: absolute;
 }
 .good_card form a {
     text-align: left;
-    display: block;
+    display: table;
     margin: 30px 0 20px 0;
     font: 16pt 'Roboto Regular';
     color: #150111;
