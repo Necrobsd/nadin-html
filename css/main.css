@@ -784,38 +784,56 @@ label.good_size input:checked + span {
 .b-popup{
     width:100%;
     min-height:100%;
-    background-color: rgba(0,0,0,0.4);
+    /*height:100%;*/
+    background-color: rgba(0,0,0,0.5);
     overflow:hidden;
     position:fixed;
     top:0px;
 }
 .b-popup .b-popup-content{
+    position: absolute;
+    left:25%;
+    top: 30%;
     color: #150111;
-    margin:40px auto 0px auto;
-    width: 970px;
-    height: 100%;
-    padding:10px;
+    width: 72vw;
+    max-width: 970px;
+    padding: 1px 0 30px 0;
     background-color: #ffffff;
     box-shadow: 0px 0px 10px #000;
 }
 .b-popup .b-popup-content h4 {
-    font: 13.5pt 'Roboto Regular';
+    margin: 20px;
+    font: 1vw 'Roboto Regular';
+}
+.b-popup .b-popup-content table tr:nth-child(2n+1) {
+    background-color: #fbc6f9;
 }
 
 .b-popup .b-popup-content table th {
     text-align: center;
-    font: 12pt 'Roboto Regular';
-    width: 170px;
-    height: 20px;
+    font: 0.9vw 'Roboto Regular';
+    width: 12.5vw;
+    max-width: 170px;
+    height: 2.5vw;
+    max-height: 40px;
     border-right: 1px solid #550055;
 }
 .b-popup .b-popup-content table td {
     text-align: center;
-    font: 12pt 'Roboto Regular';
-    width: 100px;
-    height: 20px;
+    font: 0.9vw 'Roboto Regular';
+    width: 7.5vw;
+    max-width: 100px;
+    height: 2.5vw;
+    max-height: 40px;
     border-right: 1px solid #550055;
 }
 .b-popup .b-popup-content table td:last-child {
     border-right: none;
+}
+.b-popup-content i {
+    font-size: 12pt;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #dddcdd;
 }

@@ -316,13 +316,25 @@
 	  	);
 	});
 </script>
+<!-------------------------- СКРИПТ ОТКРЫТИЯ ТАБЛИЦЫ РАЗМЕРОВ ----------------------->
 <script>
+$(window).resize(function(){
+
+	$('.b-popup-content').css({
+		position:'absolute',
+		left: $(document).width()/2 - $('.b-popup-content').outerWidth()/2,
+		top: ($(document).height() - $('.b-popup-content').outerHeight())/4
+	});
+
+});
+
     $(document).ready(function(){
         //Скрыть PopUp при загрузке страницы
         PopUpHide();
     });
     //Функция отображения PopUp
     function PopUpShow(){
+//		$(window).resize();
         $("#popup1").show();
     }
     //Функция скрытия PopUp
@@ -330,5 +342,6 @@
         $("#popup1").hide();
     }
 </script>
+<!-------------------------- СКРИПТ КАРУСЕЛИ СО СКИДКАМИ ----------------------->
 </body>
 </html>
