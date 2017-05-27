@@ -318,15 +318,7 @@
 </script>
 <!-------------------------- СКРИПТ ОТКРЫТИЯ ТАБЛИЦЫ РАЗМЕРОВ ----------------------->
 <script>
-$(window).resize(function(){
 
-	$('.b-popup-content').css({
-		position:'absolute',
-		left: $(document).width()/2 - $('.b-popup-content').outerWidth()/2,
-		top: ($(document).height() - $('.b-popup-content').outerHeight())/4
-	});
-
-});
 
     $(document).ready(function(){
         //Скрыть PopUp при загрузке страницы
@@ -334,7 +326,26 @@ $(window).resize(function(){
     });
     //Функция отображения PopUp
     function PopUpShow(){
-//		$(window).resize();
+        // Если экран меньше 768px таблица растягивается на весь экран,
+		// иначе центрируем таблицу
+		function getCenter(){
+		    if ($(window).width() <= 768){
+		    	$('.b-popup-content').css({
+					position:'absolute',
+					left: 0,
+					right: 0,
+					top: ($(window).height() - $('.b-popup-content').outerHeight())/3,
+					width: $(document).width(),
+				});
+			} else {
+                $('.b-popup-content').css({
+                    position: 'absolute',
+                    left: ($(window).width() - $('.b-popup-content').outerWidth()) / 2,
+                    top: ($(window).height() - $('.b-popup-content').outerHeight()) / 3
+                });
+            }
+		}
+		getCenter();
         $("#popup1").show();
     }
     //Функция скрытия PopUp

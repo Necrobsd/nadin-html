@@ -395,8 +395,24 @@ p.social a  {
     #catalog_menu {
         display: none!important;
     }
+    .b-popup .b-popup-content{
+        width: 72vw;
+    }
+    .b-popup .b-popup-content h4 {
+        font-size: 1vw;
+    }
+    .b-popup .b-popup-content table th {
+        font-size: 0.9vw;
+        width: 12.5vw;
+        height: 2.5vw;
+    }
+    .b-popup .b-popup-content table td {
+        font-size: 0.9vw;
+        width: 7.5vw;
+        height: 2.5vw;
+    }
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
     .logo, .search-form, .basket-button {
         float: left;
         padding: 1px 0;
@@ -412,6 +428,19 @@ p.social a  {
     }
     #discounter {
         display: none;
+    }
+    .b-popup .b-popup-content h4 {
+        font-size: 13.5pt;
+    }
+    .b-popup .b-popup-content table th {
+        font-size: 12pt;
+        width: 30vw;
+        height: 4.5vw;
+    }
+    .b-popup .b-popup-content table td {
+        font-size: 12pt;
+        width: 20vw;
+        height: 4.5vw;
     }
 }
 
@@ -784,18 +813,13 @@ label.good_size input:checked + span {
 .b-popup{
     width:100%;
     min-height:100%;
-    /*height:100%;*/
     background-color: rgba(0,0,0,0.5);
     overflow:hidden;
     position:fixed;
     top:0px;
 }
 .b-popup .b-popup-content{
-    position: absolute;
-    left:25%;
-    top: 30%;
     color: #150111;
-    width: 72vw;
     max-width: 970px;
     padding: 1px 0 30px 0;
     background-color: #ffffff;
@@ -803,7 +827,7 @@ label.good_size input:checked + span {
 }
 .b-popup .b-popup-content h4 {
     margin: 20px;
-    font: 1vw 'Roboto Regular';
+    font-family: 'Roboto Regular';
 }
 .b-popup .b-popup-content table tr:nth-child(2n+1) {
     background-color: #fbc6f9;
@@ -811,20 +835,18 @@ label.good_size input:checked + span {
 
 .b-popup .b-popup-content table th {
     text-align: center;
-    font: 0.9vw 'Roboto Regular';
-    width: 12.5vw;
+    font-family: 'Roboto Regular';
     max-width: 170px;
-    height: 2.5vw;
     max-height: 40px;
     border-right: 1px solid #550055;
 }
 .b-popup .b-popup-content table td {
     text-align: center;
-    font: 0.9vw 'Roboto Regular';
-    width: 7.5vw;
+    font-family: 'Roboto Regular';
     max-width: 100px;
-    height: 2.5vw;
     max-height: 40px;
+    /*width: 7.5vw;*/
+    /*height: 2.5vw;*/
     border-right: 1px solid #550055;
 }
 .b-popup .b-popup-content table td:last-child {
