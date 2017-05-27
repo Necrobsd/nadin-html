@@ -318,8 +318,6 @@
 </script>
 <!-------------------------- СКРИПТ ОТКРЫТИЯ ТАБЛИЦЫ РАЗМЕРОВ ----------------------->
 <script>
-
-
     $(document).ready(function(){
         //Скрыть PopUp при загрузке страницы
         PopUpHide();
@@ -338,6 +336,9 @@
 					width: $(document).width(),
 				});
 			} else {
+		        alert('window:' + $(window).width() +
+						'table:' + $('.b-popup-content').outerWidth() +
+					'left:' + ($(window).width() - $('.b-popup-content').outerWidth()) / 2)
                 $('.b-popup-content').css({
                     position: 'absolute',
                     left: ($(window).width() - $('.b-popup-content').outerWidth()) / 2,
@@ -353,6 +354,5 @@
         $("#popup1").hide();
     }
 </script>
-<!-------------------------- СКРИПТ КАРУСЕЛИ СО СКИДКАМИ ----------------------->
 </body>
 </html>
