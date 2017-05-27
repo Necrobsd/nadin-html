@@ -7,8 +7,11 @@ body{
     min-width: 375px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 12pt;
     color: #FFFFFF;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
+    color: #150111;
 }
 
 #header .row {
@@ -296,6 +299,8 @@ p.social a  {
 }
 .catalog_link p {
     padding: 0;
+    color: #FFFFFF;
+
 }
 
 .shoes {
@@ -861,4 +866,22 @@ label.good_size input:checked + span {
     top: 10px;
     right: 10px;
     color: #dddcdd;
+}
+.help h4 {
+    font: 13.5pt 'Roboto Regular';
+    margin: 20px 0;
+}
+.help p{
+    font-family: 'Roboto Light';
+    margin-left: 60px;
+}
+.help i {
+    color: #f242ea;
+}
+.help ol {
+    list-style: decimal;
+    color: #150111;
+    font-family: 'Roboto Light';
+    margin-left: 60px;
+    padding-left: 15px;
 }
