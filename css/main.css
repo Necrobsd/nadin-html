@@ -881,7 +881,7 @@ label.good_size input:checked + span {
 .help ol {
     list-style: decimal;
     color: #150111;
-    font-family: 'Roboto Light';
+    font: 12pt 'Roboto Light';
     margin-left: 60px;
     padding-left: 15px;
 }
