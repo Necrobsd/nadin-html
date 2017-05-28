@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/input_mask.js" type="text/javascript"></script>
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider-rahisified.js"></script>
+  	<!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+	<title>Оформление заказа</title>
+</head>
+
+<body>
+<!-------      ШАПКА САЙТА     -------->
+
+<div id="header" class="container">
+	<div class="row">
+		<div class="logo col-lg-3 col-md-4 col-sm-3 col-xs-12">
+			<a href="index.html">
+				<img src="images/logo.jpg">
+			</a>
+		</div>
+		<div class="search-form col-lg-6 col-md-5 col-sm-5 col-xs-10">
+			<!--<div class="search-form">-->
+			<form action="" method="post" class="search">
+			  <input type="search" name="" placeholder="Поиск..." class="input" />
+			  <input type="submit" name="" value="" class="submit" />
+			</form>
+		</div>
+		<div class="basket-button col-lg-3 col-md-3 col-sm-4 col-xs-2">
+			<div class="basket">
+				<a href="#">
+					<img src="images/shoping_cart.png">
+					<div><p>Корзина (2)</p></div>
+
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-------------------------- Меню navbar ------------------------------------->
+<div class="menu-container">
+	<div class="main-menu">
+		<a href="catalog.html">каталог</a>
+		<a href="#">новости</a>
+		<a href="#">КОНТАКТЫ</a>
+		<a href="#">ПОМОЩЬ</a>
+	</div>
+</div>
+
+<!----------------------- КАРУСЕЛЬ СО СКИДКАМИ (ДИСКОНТНЫЕ ТОВАРЫ) ----------------->
+<div id="discounter" class="content container">
+	<div class="row">
+		<div class="col-xs-12">
+			<ul class="bxslider"
+				data-breaks="[{screen: 768, slides:7}, {screen: 1024, slides:9}]">
+				<li><a href="#">
+						<div>
+							<img src="images/discount/1.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/2.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/3.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/4.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/5.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/6.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/7.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/8.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+				<li><a href="#">
+						<div>
+							<img src="images/discount/9.jpg">
+							<span>Скидка 10%</span>
+							<p>%</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!----------------------------------- КОНТЕНТ  -------------------------------------->
+<div class="content container">
+	<div class="row">
+		<div class="col-xs-9">
+			<h3 class="left">Оформление заказа</h3>
+			<form name="ordering" action="" method="post" class="ordering">
+				<div class="formfield">
+					<label for="lastname">Фамилия:</label><br/>
+					<input id="lastname" name="lastname" type="text" size="35" placeholder="Иванов" required>
+					<div id="lastname_validation" class="validation"></div>
+				</div>
+				<div class="formfield">
+					<label for="firstname">Имя:</label><br/>
+					<input id="firstname" name="firstname" type="text" size="35" placeholder="Иван" required>
+					<div id="firstname_validation" class="validation"></div>
+				</div>
+				<div class="formfield">
+					<label for="tel">Телефон:</label><br/>
+					<input id="tel" name="tel" type="tel" size="35" placeholder="+7 ( _ _ _ )  _ _ _ - _ _ - _ _" required>
+					<div id="tel_validation" class="validation"></div>
+				</div>
+				<div class="formfield">
+					<label for="email">E-mail:</label><br/>
+					<input id="email" name="email" type="email" size="35" placeholder="example@mail.ru" required>
+					<div id="email_validation" class="validation"></div>
+				</div>
+				<div class="formfield">
+					<label for="address">Адрес доставки:</label><br/>
+					<input id="address" name="address" type="text" size="60" placeholder="г. Москва, проспект Мира 7-45, 420084" required>
+					<div id="address_inform">* Поле должно содержать город,
+						   улицу, номер дома и квартиры,
+						   а также индекс почтового отделения
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<input type="submit" value="Оформить">
+			</form>
+		</div>
+		<div class="col-xs-3"></div>
+	</div>
+</div>
+
+
+
+<!------------------------------------- ФУТЕР -------------------------------->
+<div id="footer-wrapper">
+	<div id="footer" class="container">
+		<div class="row">
+			<div class="col-md-2 col-sm-3 col-xs-4">
+				<h5>Купить</h5>
+				<ul>
+					<li><a href="#">Женщины</a></li>
+					<li><a href="#">Дети</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-3 col-xs-4">
+				<h5>О компании</h5>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Наши скидки</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-4">
+				<h5>Сервис и поддержка</h5>
+				<ul>
+					<li><a href="#">Как сделать заказ</a></li>
+					<li><a href="#">Возврат товара</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Способы оплаты</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-sm-3 payment-cards">
+				<h5>Мы принимаем</h5>
+				<ul>
+					<li><img src="images/visa.png" height="20px"></li>
+					<li><img src="images/mastercard.png"  height="20px"></li>
+					<li><img src="images/paypal.png"  height="20px"></li>
+				</ul>
+			</div>
+			<div class="col-md-2 col-sm-3 col-xs-12 copyrights">
+				<p>© 2017 Nadin</p>
+				<p>Все права защищены</p>
+			<p class="social">
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			</p>
+			<p>metea_design</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-------------------------- СКРИПТ КАРУСЕЛИ СО СКИДКАМИ ----------------------->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+	  $('.bxslider').bxSlider(
+		{
+			autoReload: true,
+			auto: true,
+			pause: 4000,
+			controls: false,
+			pager:false,
+			slideMargin: 15,
+		}
+	  	);
+	});
+</script>
+<!-------------------------- СКРИПТ ПРОВЕРКИ ВВЕДЕНЫХ ДАННЫХ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ----------------------->
+<script>
+//$(document).ready(function(){
+	var success = '<img src="images/check-mark.png">';
+    var form = document.forms.ordering;
+    var lastname = form.elements.lastname;
+    var firstname = form.elements.firstname;
+    var tel = form.elements.tel;
+    var email = form.elements.email;
+    var regexpEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var regexpName = /^[а-яА-Я]{2,35}$/;
+    var regexpTel = /^((\+7)\s\(\s([0-9]{3})\s\)\s([0-9]{3})\s\-\s([0-9]{2})\s\-\s([0-9]{2}))$/;
+    lastname.onblur = function () {
+        if (!(lastname.value.match(regexpName))) {
+            var error = "* Поле заполнено неправильно: <br/> Имя не должно быть пустым, содержать спец. символы и цифры";
+            document.getElementById('lastname_validation').innerHTML = error;
+        }
+        else {
+            document.getElementById('lastname_validation').innerHTML = success;
+		}
+    }
+	firstname.onblur = function () {
+        if (!(firstname.value.match(regexpName))) {
+            var error = "* Поле заполнено неправильно: <br/> Имя не должно быть пустым, содержать спец. символы и цифры";
+            document.getElementById('firstname_validation').innerHTML = error;
+        }
+        else {
+            document.getElementById('firstname_validation').innerHTML = success;
+		}
+    }
+	tel.onblur = function () {
+        if (!(tel.value.match(regexpTel))) {
+            var error = "* Поле заполнено неправильно: <br/> Неверный формат номера телефона";
+            document.getElementById('tel_validation').innerHTML = error;
+        }
+        else {
+			document.getElementById('tel_validation').innerHTML = success;
+		}
+    }
+    email.onblur = function () {
+        if (!(email.value.match(regexpEmail))) {
+            var error = "* Поле заполнено неправильно: <br/> Почтовый адрес должен содержать имя пользователя, <br/> символ @ и доменное имя почтового сервера";
+            document.getElementById('email_validation').innerHTML = error;
+        }
+        else {
+
+            document.getElementById('email_validation').innerHTML = success;
+		}
+    }
+//})
+</script>
+<!--СКРИПТ ВВОДА НОМЕРА ТЕЛЕФОНА ПРИ ОФОРМЛЕМНИИ ЗАКАЗА-->
+<script type="text/javascript">
+	jQuery(function($){
+	   $("#tel").mask("+7 ( 999 ) 999 - 99 - 99");
+	});
+</script>
+</body>
+</html>

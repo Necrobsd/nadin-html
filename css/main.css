@@ -703,6 +703,7 @@ position: absolute;
     display: block;
 }
 .bx-wrapper a p {
+    color: #ffffff;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -885,3 +886,50 @@ label.good_size input:checked + span {
     margin-left: 60px;
     padding-left: 15px;
 }
+.ordering .formfield {
+    overflow: hidden;
+    margin-bottom: 20px;
+    clear: both;
+}
+.ordering div label {
+    font: 12pt 'Roboto Regular';
+    color: #150111;
+}
+
+.ordering #address_inform {
+    margin-left: 10px;
+    width: 200px;
+    float: left;
+    font: 8.25pt 'Open Sans';
+    font-style: italic;
+    line-height: 12px;
+    color: #150111;
+}
+.ordering p {
+    margin-bottom: 5px;
+}
+.ordering input {
+    display: block;
+    float: left;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    padding: 8px;
+    color: #150111;
+    font: 10.5pt 'Open Sans';
+    font-style: normal;
+}
+.validation {
+    margin: 0 0 0 10px;
+    float: left;
+    color: #f242ea;
+    font: 10.5pt "Roboto Regular";
+
+}
+.validation img {
+    margin: 5px 0;
+    width: 24px;
+}
+.ordering input::-webkit-input-placeholder {color:#c0c0c0; font-style: italic}
+.ordering input::-moz-placeholder          {color:#c0c0c0; font-style: italic}/* Firefox 19+ */
+.ordering input:-moz-placeholder           {color:#c0c0c0; font-style: italic}/* Firefox 18- */
+.ordering input:-ms-input-placeholder      {color:#c0c0c0; font-style: italic}
