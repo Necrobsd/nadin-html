@@ -872,7 +872,7 @@ label.good_size input:checked + span {
     margin: 20px 0;
 }
 .help p{
-    font-family: 'Roboto Light';
+    font: 12pt 'Roboto Light';
     margin-left: 60px;
 }
 .help i {
