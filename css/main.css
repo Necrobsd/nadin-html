@@ -473,6 +473,9 @@ p.social a  {
     .payment-cards {
         display: none;
     }
+    .ordering input#address {
+        width: 100%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
@@ -569,13 +572,12 @@ h3.left:after {
   display: inline-block;
   content: "";
   height: 1px;
-  background: #660066;
+  background: #aa7faa;
   position: absolute;
   width: 100%;
   bottom: 5px;
   margin-top: -2px;
   margin-left: 10px;
-  opacity: 0.5;
 }
 
 .catalog a {
@@ -811,6 +813,9 @@ label.good_size input:checked + span {
     color: #ffffff;
     background-color: #550055;
 }
+.add-to-basket input:hover {
+    background-color: #f242ea;
+}
 .good_card form > h4 {
     font: 12pt 'Roboto Regular';
     color: #150111;
@@ -933,3 +938,29 @@ label.good_size input:checked + span {
 .ordering input::-moz-placeholder          {color:#c0c0c0; font-style: italic}/* Firefox 19+ */
 .ordering input:-moz-placeholder           {color:#c0c0c0; font-style: italic}/* Firefox 18- */
 .ordering input:-ms-input-placeholder      {color:#c0c0c0; font-style: italic}
+
+.rightside {
+    margin-top: 48px;
+    padding: 50px 0 0 0;
+    border: 1px solid #aa7faa;
+}
+.rightside p {
+    font: 13.5pt 'Roboto Regular';
+    text-align: center;
+}
+.rightside p span {
+    font: 13.5pt 'Roboto Medium';
+}
+.rightside input {
+    display: block;
+    margin: 30px auto 50px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font: 13pt 'Roboto Light';
+    color: #ffffff;
+    background-color: #550055;
+}
+.rightside input:hover {
+    background-color: #f242ea;
+}
