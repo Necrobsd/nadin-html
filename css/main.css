@@ -1,9 +1,13 @@
-﻿/*.carcas {*/
- 	/*width: 100%;*/
-	/*margin: 0 auto;*/
-/*}*/
-
-/* a-ha-ha */
+﻿/*For browsers*/
+@font-face {
+    font-family: 'Monotype Corsiva';
+    src: local('Monotype Corsiva'), url(../fonts/monotype-corsiva.ttf);
+    }
+/*For IE*/
+@font-face {
+    font-family: 'Monotype Corsiva';
+    src: local('Monotype Corsiva'), url(../fonts/monotype-corsiva.eot);
+    }
 body{
     margin: 0;
     min-width: 375px;
@@ -1052,3 +1056,4 @@ label.good_size input:checked + span {
     color: #550055;
     margin: 0 5px;
 }
+
