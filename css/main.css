@@ -995,7 +995,7 @@ label.good_size input:checked + span {
 }
 .news_item img.right_image {
     width: 49%;
-    margin-left: 2%;
+    margin-left: 5%;
     max-width: none;
     float: right;
 }
