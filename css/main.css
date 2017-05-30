@@ -964,3 +964,44 @@ label.good_size input:checked + span {
 .rightside input:hover {
     background-color: #f242ea;
 }
+
+.news_item {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.news_item h4 {
+    font-family: 'Monotype Corsiva';
+    font-size: 18pt;
+    color: #550055;
+}
+.news_item p {
+    font: 12pt 'Roboto Regular';
+    line-height: inherit;
+}
+.news_item a.read-more {
+    display: block;
+    float: left;
+    width: 170px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #550055;
+    border-radius: 5px;
+    font: 13.5pt 'Roboto Regular';
+}
+.news_item img {
+    display: block;
+}
+.news_item img.right_image {
+    width: 49%;
+    margin-left: 2%;
+    max-width: none;
+    float: right;
+}
+.news_item img.left_image {
+    width: 49%;
+    margin-right: 2%;
+    max-width: none;
+    float: left;
+}
