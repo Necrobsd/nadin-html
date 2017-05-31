@@ -1,11 +1,11 @@
 ﻿/*For browsers*/
 @font-face {
-    font-family: 'Monotype Corsiva';
+    font-family: 'Monotype Corsiva', sans-serif;
     src: local('Monotype Corsiva'), url(../fonts/monotype-corsiva.ttf);
     }
 /*For IE*/
 @font-face {
-    font-family: 'Monotype Corsiva';
+    font-family: 'Monotype Corsiva', sans-serif;
     src: local('Monotype Corsiva'), url(../fonts/monotype-corsiva.eot);
     }
 body{
@@ -340,7 +340,6 @@ p.social a  {
         bottom: 2%;
     }
 .carousel-caption {
-    /*max-width: 1170px;*/
     width: 1170px;
     margin: 0 auto;
     position: absolute;
@@ -348,8 +347,6 @@ p.social a  {
     bottom: 10%;
     left: 0;
     z-index: 10;
-    /* padding-top: 20px; */
-    /* padding-bottom: 20px; */
     color: #fff;
     text-align: left;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
@@ -459,8 +456,7 @@ p.social a  {
     .logo {
         padding: 29px 0;
     }
-    #discounter a div span {
-        margin: 0 12px;
+    .bx-wrapper a span {
         font: 12pt 'Roboto Medium';
     }
     .main-menu {
@@ -691,25 +687,9 @@ position: absolute;
     font: 13.5pt 'Roboto Bold';
     color: #ffffff;
     position: relative;
-    /*float: left;*/
     width: 100%;
-    /*margin: 0.625%;*/
 }
 
-/*#discounter a:first-child{*/
-    /*margin-left: -15px;*/
-/*}*/
-/*#discounter a:last-child{*/
-    /*margin-right: -15px;*/
-/*}*/
-.bx-wrapper a img{
-
-    /*margin: 0;*/
-    /*width: 100%;*/
-    /*max-width: 100px;*/
-    /*max-height: 100px;*/
-    display: block;
-}
 .bx-wrapper a p {
     color: #ffffff;
     position: absolute;
@@ -720,18 +700,16 @@ position: absolute;
     background-color: #550055;
     font: 13.5pt 'Roboto Bold';
 }
-.bx-wrapper  span {
-    padding: 0 10px;
+.bx-wrapper a span {
     text-align: center;
     display: none;
     color: #FFFFFF;
     position: absolute;
     top: 35%;
-    left: 0;
+    left: 10px;
+    right: 10px;
 }
-/*#discounter a div {*/
-    /*width: 93%;*/
-/*}*/
+
 .bx-wrapper a div:hover {
     background-color: #e09dd9;
 }
@@ -976,7 +954,7 @@ label.good_size input:checked + span {
     margin-bottom: 40px;
 }
 .news_item h4 {
-    font-family: 'Monotype Corsiva';
+    font-family: 'Monotype Corsiva', sans-serif;
     font-size: 18pt;
     color: #550055;
 }
@@ -1012,21 +990,21 @@ label.good_size input:checked + span {
     float: left;
 }
 .news_detail h4 {
-    font-family: 'Monotype Corsiva';
+    font-family: 'Monotype Corsiva', sans-serif;
     color: #550055;
     font-size: 24pt;
     margin-bottom: 40px;
 }
 .news_detail h5 {
     font-size: 18pt;
-    font-family: 'Roboto Regular';
+    font-family: 'Roboto Regular', sans-serif;
     margin: 40px 0;
 }
 .news_detail img {
     max-width: none;
 }
 .news_detail p {
-    font: 13.5pt 'Roboto Regular';
+    font: 13.5pt 'Roboto Regular', sans-serif;
 }
 .news_detail a.come-back {
     display: block;

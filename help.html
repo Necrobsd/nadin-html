@@ -74,7 +74,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/1.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -82,7 +82,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/2.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -90,7 +90,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/3.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -98,7 +98,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/4.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -106,7 +106,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/5.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -114,7 +114,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/6.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -122,7 +122,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/7.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -130,7 +130,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/8.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -138,7 +138,7 @@
 				<li><a href="#">
 						<div>
 							<img src="images/discount/9.jpg">
-							<span>Скидка 10%</span>
+							<span>Скидка<br/>10%</span>
 							<p>%</p>
 						</div>
 					</a>
@@ -222,69 +222,6 @@
 		</div>
 	</div>
 </div>
-<div class="b-popup" id="popup1">
-    <div class="b-popup-content">
-        <h4>Таблица размеров</h4>
-		<table>
-			<tr>
-				<th>Размер</th>
-				<td>42</td>
-				<td>44</td>
-				<td>46</td>
-				<td>48</td>
-				<td>50</td>
-				<td>52</td>
-				<td>54</td>
-				<td>56</td>
-			</tr>
-			<tr>
-				<th>Объем груди</th>
-				<td>84</td>
-				<td>88</td>
-				<td>92</td>
-				<td>96</td>
-				<td>100</td>
-				<td>104</td>
-				<td>108</td>
-				<td>112</td>
-			</tr>
-			<tr>
-				<th>Объем талии</th>
-				<td>64</td>
-				<td>68</td>
-				<td>72</td>
-				<td>76</td>
-				<td>80</td>
-				<td>84</td>
-				<td>88</td>
-				<td>92</td>
-			</tr>
-			<tr>
-				<th>Объем бедер</th>
-				<td>90</td>
-				<td>94</td>
-				<td>98</td>
-				<td>102</td>
-				<td>106</td>
-				<td>110</td>
-				<td>114</td>
-				<td>118</td>
-			</tr>
-			<tr>
-				<th>Длина изделия</th>
-				<td>110</td>
-				<td>112</td>
-				<td>114</td>
-				<td>116</td>
-				<td>118</td>
-				<td>120</td>
-				<td>120</td>
-				<td>120</td>
-			</tr>
-		</table>
-    <a href="javascript:PopUpHide()"><i class="fa fa-times" aria-hidden="true"></i></a>
-    </div>
-</div>
 
 <!-------------------------- СКРИПТ КАРУСЕЛИ СО СКИДКАМИ ----------------------->
 
@@ -301,41 +238,6 @@
 		}
 	  	);
 	});
-</script>
-<!-------------------------- СКРИПТ ОТКРЫТИЯ ТАБЛИЦЫ РАЗМЕРОВ ----------------------->
-<script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow(){
-        // Если экран меньше 768px таблица растягивается на весь экран,
-		// иначе центрируем таблицу
-		function getCenter(){
-		    if ($(window).width() <= 768){
-		    	$('.b-popup-content').css({
-					position:'absolute',
-					left: 0,
-					right: 0,
-					top: ($(window).height() - $('.b-popup-content').outerHeight())/3,
-					width: $(document).width(),
-				});
-			} else {
-                $('.b-popup-content').css({
-                    position: 'absolute',
-                    left: ($(window).width() - $('.b-popup-content').outerWidth()) / 2,
-                    top: ($(window).height() - $('.b-popup-content').outerHeight()) / 3
-                });
-            }
-		}
-		getCenter();
-        $("#popup1").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
-    }
 </script>
 </body>
 </html>
