@@ -1011,26 +1011,15 @@ label.good_size input:checked + span {
     float: left;
     text-align: center;
     margin-top: 30px;
+    margin-right: 30px;
     padding: 8px 15px;
     border: 2px solid #550055;
     border-radius: 5px;
     font: 13.5pt 'Roboto Regular';
 }
-.news_detail a.to-main i,
 .news_detail a.come-back i {
     margin: 0 5px;
     color: #550055;
-}
-.news_detail a.to-main {
-    display: block;
-    float: left;
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 30px;
-    padding: 8px 15px;
-    border: 2px solid #550055;
-    border-radius: 5px;
-    font: 13.5pt 'Roboto Regular';
 }
 
 
