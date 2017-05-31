@@ -1016,8 +1016,10 @@ label.good_size input:checked + span {
     border-radius: 5px;
     font: 13.5pt 'Roboto Regular';
 }
+.news_detail a.to-main i,
 .news_detail a.come-back i {
     margin: 0 5px;
+    color: #550055;
 }
 .news_detail a.to-main {
     display: block;
@@ -1030,8 +1032,5 @@ label.good_size input:checked + span {
     border-radius: 5px;
     font: 13.5pt 'Roboto Regular';
 }
-.news_detail a.to-main i {
-    color: #550055;
-    margin: 0 5px;
-}
+
 
