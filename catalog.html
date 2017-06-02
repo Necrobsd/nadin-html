@@ -450,12 +450,12 @@
 	/* Open when someone clicks on the span element */
 	function openNav() {
 		document.getElementById("MobileNav").style.width = "100%";
-		document.body.style.overflow = "hidden"
+		document.body.style.position = "fixed"
 	}
 	/* Close when someone clicks on the "x" symbol inside the overlay */
 	function closeNav() {
 		document.getElementById("MobileNav").style.width = "0%";
-		document.body.style.overflow = "auto"
+		document.body.style.position = "relative"
 	}
 </script>
 <!--------------------Раскрывает и скрывает левое меню------------------------->
