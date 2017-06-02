@@ -21,13 +21,22 @@ body{
 }
 
 #header .row {
+    margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
 }
+
+.logo a {
+    display: block;
+}
 .logo a img {
     width: 200px;
+    display: block;
 }
 
+.search-form {
+    float: left;
+}
 .search {
   /* устанавливаем необходимую ширину формы в зависимости от дизайна
   ** форма без проблем растягивается */
@@ -118,9 +127,6 @@ input[type="search"] {
     margin-top: 0;
 }
 
-.basket-button {
-    float: right;
-}
 .basket a {
     display: block;
     background-color: #550055;
@@ -133,10 +139,12 @@ input[type="search"] {
 }
 .basket a div {
     float: left;
+    width: 100px;
     border-left: 1px solid #fff;
 }
 .basket a div p {
-    padding: 9px 20px;
+    text-align: center;
+    padding: 9px 0px;
     font-size: 13pt;
     font-family: 'Roboto Thin', Arial;
     font-weight: 100;
@@ -379,6 +387,7 @@ p.social a  {
 
 @media (min-width: 768px) {
     .logo {
+        /*float: left;*/
         padding: 36px 0;
     }
     #header, #footer {
@@ -398,6 +407,7 @@ p.social a  {
         padding: 33px 0;
     }
     .basket-button {
+        float: right;
         padding: 33px 0;
     }
     #catalog_menu {
@@ -419,14 +429,22 @@ p.social a  {
         width: 7.5vw;
         height: 2.5vw;
     }
+    .MobileMenu {
+        display: none;
+    }
 }
-@media (max-width: 768px){
+@media (max-width: 767px){
+    .logo a img {
+        margin: 0 auto;
+    }
     .logo, .search-form, .basket-button {
-        float: left;
         padding: 1px 0;
     }
     .basket div {
         display: none;
+    }
+    .basket {
+        float: left;
     }
     .copyrights {
         display: none;
@@ -450,6 +468,16 @@ p.social a  {
         width: 20vw;
         height: 4.5vw;
     }
+    .menu-container {
+        display: none;
+    }
+    .search-form {
+        display: none;
+    }
+    .MobileMenu {
+        display: block;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -665,7 +693,7 @@ position: absolute;
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-    z-index: 2;
+    z-index: 0;
     color: #fff;
     cursor: default;
     background-color: #550055;
@@ -1022,4 +1050,123 @@ label.good_size input:checked + span {
     color: #550055;
 }
 
+/**************************** Мобильное меню **************************/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+    /*background-color: rgb(255,255,255); !* Black fallback color *!*/
+    background-color: rgba(255,255,255, 1); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
 
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 5px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay-content ul {
+    list-style: none;
+}
+
+ /*The navigation links inside the overlay*/
+.overlay a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #272626;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+ /*Position the close button (top right corner)*/
+.overlay .closebtn {
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    font-size: 17px;
+    margin: 0px;
+    color: #550055;
+}
+
+
+.menu-item {
+    border-bottom: 1px solid #e8e0e8;
+    padding: 20px 0;
+    margin: 0 20px 0 10px;
+}
+.menu-item > a {
+    margin-left: 10px;
+    text-align: left;
+    font: 16px 'Roboto Regular';
+    text-decoration: none;
+    width: 100%;
+    color: #272626;
+}
+
+ul#mobile_catalog_menu {
+    margin: 8px 0 0 0;
+}
+
+ul#mobile_catalog_menu li {
+    padding: 5px 0;
+    font: 12pt 'Roboto Light'
+}
+
+ul#mobile_catalog_menu li a {
+    display: block;
+}
+
+ul#mobile_catalog_menu li a.collapsed:after {
+    padding: 5px 0;
+    content: "\f054";
+    font-size: 11px;
+    font-family: FontAwesome;
+    color: #272626;
+    float: right;
+}
+ul#mobile_catalog_menu li a.expanded:after {
+    padding: 5px 0;
+    content: "\f078";
+    font-size: 11px;
+    font-family: FontAwesome;
+    color: #272626;
+    float: right;
+}
+
+ul.mobile_catalog_submenu {
+    padding: 8px 0;
+}
+ul#mobile_catalog_menu ul li {
+    padding: 2px 20px;
+}
+ul.mobile_catalog_submenu li a{
+    font: 14px 'Roboto Light';
+    color: #2a0323;
+}
+ul.mobile_catalog_submenu li a:hover {
+    font: 14px 'Roboto Medium';
+    color: #f242ea;
+}
+
+ul#mobile_catalog_menu li a.expanded {
+    font-family: 'Roboto'; }
+ul#mobile_catalog_menu a + ul { display: none;}
+
+.MobileMenu {
+    padding: 1px 0;
+}
+.MobileMenu div img {
+    padding: 7px 0;
+    max-width: 100px;
+    float: right;
+}
