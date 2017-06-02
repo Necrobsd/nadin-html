@@ -10,7 +10,7 @@
     }
 body{
     margin: 0;
-    min-width: 375px;
+    min-width: 320px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 12pt;
@@ -1096,6 +1096,7 @@ label.good_size input:checked + span {
     font-size: 17px;
     margin: 0px;
     color: #550055;
+    display: block;
 }
 
 

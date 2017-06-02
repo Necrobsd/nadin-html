@@ -31,19 +31,7 @@
 
 <div id="header" class="container">
 	<div class="row">
-		<div class="logo col-lg-3 col-md-4 col-sm-3 col-xs-12">
-			<a href="index.html">
-				<img src="images/logo.jpg">
-			</a>
-		</div>
-		<div class="search-form col-lg-6 col-md-5 col-sm-5 col-xs-10">
-			<!--<div class="search-form">-->
-			<form action="" method="post" class="search">
-			  <input type="search" name="" placeholder="Поиск..." class="input" />
-			  <input type="submit" name="" value="" class="submit" />
-			</form>
-		</div>
-		<div class="basket-button col-lg-3 col-md-3 col-sm-4 col-xs-2">
+		<div class="basket-button col-xs-2 col-sm-3 col-md-3 col-lg-3">
 			<div class="basket">
 				<a href="#">
 					<img src="images/shoping_cart.png">
@@ -51,6 +39,22 @@
 
 				</a>
 			</div>
+		</div>
+		<div class="logo col-xs-8 col-sm-3 col-md-4 col-lg-3">
+			<a href="index.html">
+				<img src="images/logo.jpg">
+			</a>
+		</div>
+		<div class="MobileMenu col-xs-2 col-sm-0 col-md-0 col-lg-0">
+			<div class="MobileMenu" onclick="openNav()">
+				<img src="images/burger.png">
+			</div>
+		</div>
+		<div class="search-form col-xs-0 col-sm-6 col-md-5 col-lg-6">
+			<form action="" method="post" class="search">
+			  <input type="search" name="" placeholder="Поиск..." class="input" />
+			  <input type="submit" name="" value="" class="submit" />
+			</form>
 		</div>
 	</div>
 </div>
@@ -65,6 +69,74 @@
 	</div>
 </div>
 
+<!-------------------------Мобильное МЕНЮ ------------------------------------>
+<!-- The overlay -->
+<div id="MobileNav" class="overlay">
+  <!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+  <!-- Overlay content -->
+  	<div class="overlay-content">
+		<div class="menu-item">
+			<a href="index.html">Домашняя страница</a>
+		</div>
+		<div class="menu-item">
+		  <a href="#">Каталог</a>
+			<ul id="mobile_catalog_menu">
+			  <li><a href="#0">Одежда для женщин</a>
+				<ul class="mobile_catalog_submenu">
+					<li><a href="#">Брюки, джинсы, лоссины</a></li>
+					<li><a href="#">Шорты</a></li>
+					<li><a href="#">Комбинезоны</a></li>
+					<li><a href="#">Юбки</a></li>
+					<li><a href="#" class="active">Свитера, кофты, рубашки</a></li>
+					<li><a href="#">Футболки</a></li>
+					<li><a href="#">Платья</a></li>
+					<li><a href="#">Спортивная одежда</a></li>
+					<li><a href="#">Куртки, жилетки, пальто</a></li>
+					<li><a href="#">Костюмы</a></li>
+					<li><a href="#">Кардиганы, пиджаки</a></li>
+					<li><a href="#">Купальники, боди</a></li>
+					<li><a href="#">Нижнее белье</a></li>
+					<li><a href="#">Мама и дочка</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">Одежда для женщин Size+</a>
+				  <ul class="mobile_catalog_submenu">
+					<li><a href="#">Брюки, джинсы, лоссины</a></li>
+					<li><a href="#">Шорты</a></li>
+					<li><a href="#">Комбинезоны</a></li>
+					<li><a href="#">Юбки</a></li>
+					<li><a href="#">Свитера, кофты, рубашки</a></li>
+					<li><a href="#">Футболки</a></li>
+					<li><a href="#">Платья</a></li>
+					<li><a href="#">Спортивная одежда</a></li>
+					<li><a href="#">Куртки, жилетки, пальто</a></li>
+					<li><a href="#">Костюмы</a></li>
+					<li><a href="#">Кардиганы, пиджаки</a></li>
+					<li><a href="#">Купальники, боди</a></li>
+					<li><a href="#">Нижнее белье</a></li>
+					<li><a href="#">Мама и дочка</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">Детская одежда</a></li>
+			  <li><a href="#">Аксессуары</a></li>
+			  <li><a href="#">Косметика и парфюмерия</a></li>
+			  <li><a href="#">Обувь</a></li>
+			  <li><a href="#">Сумки и кошельки</a></li>
+			  <li><a href="#">Спальные принадлежности</a></li>
+			</ul>
+		  </div>
+			<div class="menu-item">
+			<a href="news_list.html">Новости</a>
+			</div>
+			<div class="menu-item">
+			<a href="#">Контакты</a>
+			</div>
+			<div class="menu-item">
+			<a href="help.html">Помощь</a>
+			</div>
+	 </div>
+</div>
 <!----------------------- КАРУСЕЛЬ СО СКИДКАМИ (ДИСКОНТНЫЕ ТОВАРЫ) ----------------->
 <div id="discounter" class="content container">
 	<div class="row">
@@ -222,7 +294,34 @@
 		</div>
 	</div>
 </div>
-
+<!--------------------------- Мобильное меню------------------------------------>
+<script type="text/javascript">
+	/* Open when someone clicks on the span element */
+	function openNav() {
+		document.getElementById("MobileNav").style.width = "100%";
+		document.body.style.position = "fixed"
+	}
+	/* Close when someone clicks on the "x" symbol inside the overlay */
+	function closeNav() {
+		document.getElementById("MobileNav").style.width = "0%";
+		document.body.style.position = ""
+	}
+</script>
+<!--------------------Раскрывает и скрывает меню каталога ------------------------->
+<script>
+   $(function ()
+	{
+		  $('ul#leftmenu ul, ul.mobile_catalog_submenu').each(function(index, el) {
+			var a = $(this).prev();
+			a.addClass('collapsed').click(function() {
+			  $(el).slideToggle(200, function () {
+			  a.toggleClass('collapsed expanded');
+			});
+		  return false;
+		});
+	  });
+	})
+</script>
 <!-------------------------- СКРИПТ КАРУСЕЛИ СО СКИДКАМИ ----------------------->
 
 <script type="text/javascript">
