@@ -272,7 +272,7 @@
 <div id="footer-wrapper">
 	<div id="footer" class="container">
 		<div class="row">
-			<div class="col-xs-5 col-sm-3 col-md-3">
+			<div class="col-xs-5 col-sm-3 col-sm-push-6 col-md-3 col-md-push-4">
 				<h5>Сервис и поддержка</h5>
 				<ul>
 					<li><a href="#">Как сделать заказ</a></li>
@@ -281,14 +281,14 @@
 					<li><a href="#">Способы оплаты</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-3 col-sm-3 col-md-2">
+			<div class="col-xs-3 col-sm-3 col-sm-pull-3 col-md-2">
 				<h5>Купить</h5>
 				<ul>
 					<li><a href="#">Женщины</a></li>
 					<li><a href="#">Дети</a></li>
 				</ul>
 			</div>
-			<div class="about col-xs-0 col-sm-3 col-md-2">
+			<div class="about col-xs-0 col-sm-3 col-sm-pull-3 col-md-2">
 				<h5>О компании</h5>
 				<ul>
 					<li><a href="#">О нас</a></li>
@@ -317,7 +317,34 @@
 		</div>
 	</div>
 </div>
-
+<!--------------------------- Мобильное меню------------------------------------>
+<script type="text/javascript">
+	/* Open when someone clicks on the span element */
+	function openNav() {
+		document.getElementById("MobileNav").style.width = "100%";
+		document.body.style.position = "fixed"
+	}
+	/* Close when someone clicks on the "x" symbol inside the overlay */
+	function closeNav() {
+		document.getElementById("MobileNav").style.width = "0%";
+		document.body.style.position = ""
+	}
+</script>
+<!--------------------Раскрывает и скрывает меню каталога ------------------------->
+<script>
+   $(function ()
+	{
+		  $('ul#leftmenu ul, ul.mobile_catalog_submenu').each(function(index, el) {
+			var a = $(this).prev();
+			a.addClass('collapsed').click(function() {
+			  $(el).slideToggle(200, function () {
+			  a.toggleClass('collapsed expanded');
+			});
+		  return false;
+		});
+	  });
+	})
+</script>
 <!-------------------------- СКРИПТ КАРУСЕЛИ СО СКИДКАМИ ----------------------->
 
 <script type="text/javascript">
