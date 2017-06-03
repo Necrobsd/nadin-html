@@ -176,8 +176,11 @@ input[type="search"] {
     margin: 0;
 }
 
-.basket a:hover {
+.basket a:hover, .basket a:active {
     background-color: #f242ea;
+}
+.basket a.active {
+   background-color: #f242ea;
 }
 
 .menu-container{
@@ -1007,7 +1010,7 @@ label.good_size input:checked + span {
 
 .rightside {
     margin-top: 48px;
-    padding: 50px 0 0 0;
+    padding: 50px 0;
     border: 1px solid #aa7faa;
 }
 .rightside p {
@@ -1019,7 +1022,7 @@ label.good_size input:checked + span {
 }
 .rightside input {
     display: block;
-    margin: 30px auto 50px auto;
+    margin: 30px auto 0 auto;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -1030,7 +1033,13 @@ label.good_size input:checked + span {
 .rightside input:hover {
     background-color: #f242ea;
 }
-
+.rightside a {
+    display: block;
+    margin-top: 30px;
+    text-decoration: underline;
+    font-size: 16px;
+    color: #f242ea;
+}
 .news_item {
     overflow: hidden;
     margin-bottom: 40px;
@@ -1103,7 +1112,48 @@ label.good_size input:checked + span {
     margin: 0 5px;
     color: #550055;
 }
-
+.cart {
+    color: #150111;
+}
+.cart img {
+    width: 30%;
+    float: left;
+    margin: 10px 15px 10px 0;
+}
+.cart .items_count {
+    border: solid 1px #550055;
+    border-radius: 5px;
+    float: left;
+}
+.cart .items_count span {
+    margin: 5px;
+}
+.cart > div {
+    position: relative;
+    float: left;
+}
+.cart >div>.fa-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.cart p {
+    font: 16px 'Roboto Regular';
+}
+.cart p span {
+    font: 18px 'Roboto Medium';
+    text-transform: uppercase;
+}
+.cart label {
+    float: left;
+    font: 16px 'Roboto Regular';
+    margin: 4px 10px 4px 0;
+}
+.cart button {
+    border: none;
+    background-color: #550055;
+    color: #ffffff;
+}
 /**************************** Мобильное меню **************************/
 /* The Overlay (background) */
 .overlay {

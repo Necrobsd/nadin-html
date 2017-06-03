@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/input_mask.js" type="text/javascript"></script>
 	<!-- bxSlider CSS file -->
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<!-- bxSlider Javascript file -->
@@ -23,7 +25,7 @@
     <![endif]-->
 
 
-	<title>Новости</title>
+	<title>Корзина</title>
 </head>
 
 <body>
@@ -33,11 +35,11 @@
 	<div class="row">
 		<div class="basket-button col-xs-2 col-sm-3 col-md-3 col-lg-3">
 			<div class="basket">
-				<a href="#">
+				<a href="cart.html" class="active">
 					<div class="image">
 						<p class="counter">15</p>
 					</div>
-					<div><p>Корзина</p></div>
+					<div><p>Корзина(2)</p></div>
 				</a>
 			</div>
 		</div>
@@ -223,44 +225,39 @@
 <!----------------------------------- КОНТЕНТ  -------------------------------------->
 <div class="content container">
 	<div class="row">
-		<div class="col-xs-12">
-			<h3 class="left">Новости в мире моды</h3>
-			<div class="news_item">
-				<img class="right_image" src="images/news/news1.jpg">
-				<h4>С чем носить слипоны</h4>
-				<p>Слипоны – это удобная, практичная обувь с эластичными вставками у язычка и по бокам.
-					Ее преимущества в полном отсутствии шнурков и плоской подошве.
-					Важно только знать о том, с чем носить слипоны так, чтобы они стали ярким акцентом образа.</p>
-				<p>Сегодня слипоны это настоящий тренд. Их выпускают такие мировые бренды как Celine, Prada, Lanvin, Givenchy.
-					И хотя традиционно верхняя часть этой удобной летней обуви изготавливается из парусины, дизайнеры экспериментируют,
-					используя разные ткани и даже кожу. Их декорируют стразами и шипами, а ткань часто имеет принт.
-					Хотя популярны и однотонные модели, особенно с подошвой контрастного цвета.</p>
-				<a href="news_detail.html" class="read-more">Читать дальше</a>
+		<div class="col-xs-12 col-md-9">
+			<h3 class="left">Корзина</h3>
+			<div class="row">
+				<div class="cart col-xs-12 col-sm-6">
+					<img src="images/catalog/1.jpg">
+					<div>
+						<form>
+							<h4>Брючный костюм</h4>
+							<p>Размер &nbsp<span>S</span></p>
+							<label>Количество</label>
+							<div class="items_count">
+								<button><i class="fa fa-minus" aria-hidden="true"></i></button>
+								<span>1</span>
+								<button><i class="fa fa-plus" aria-hidden="true"></i></button>
+							</div>
+							Цена<br/><span>2710 руб.</span>
+						</form>
+						<i class="fa fa-close"aria-hidden="true"></i>
+					</div>
+
+				</div>
+				<div class="cart col-xs-12 col-sm-6">
+					<img src="images/catalog/1.jpg">
+					<div>
+						<h4>Брючный костюм</h4>
+					</div>
+				</div>
 			</div>
-			<div class="news_item">
-				<img class="left_image" src="images/news/news2.jpg">
-				<h4>Как красиво завязать шарф: 9 способов с фотографиями</h4>
-				<p>Подобрать подходящий вариант можно, исходя из ваших предпочтений и моделей.
-					Самый простой метод не завязывать шарф вообще.
-					Если позволяет длина, платок подходящей модели можно просто перекинуть через шею и расправить
-					спереди. Это создаст непринужденный образ, но от непогоды, конечно же, не защитит.</p>
-				<p>Видоизмененный вариант: шарф накинуть концами назад, чтобы центральная часть приходилась на шею.
-					После концы перекрестить сзади и вернуть обратно.
-					Спереди его можно завязать на легкий узел или оставить распущенным.</p>
-				<a href="news_detail.html" class="read-more">Читать дальше</a>
-			</div>
-			<div class="news_item">
-				<img class="right_image" src="images/news/news3.jpg">
-				<h4>Капсульный гардероб</h4>
-				<p>Каждый день мы просыпаемся с мыслью о том, что же сегодня надеть.
-					Даже те, кто планирует это с вечера, утром могут изменить решение, опираясь как на настроение,
-					так и на погоду. Ведь если предполагалось по прогнозу, что погода будет сухой и теплой,
-					был приготовлен один комплект вещей, а если утром внезапно и неожиданно (что бывает нередко)
-					пошел дождь, то стиль нужно срочно поменять. Кроме того часто возникает проблема, состоящая в том,
-					что шкаф забит вещами, а надеть, на самом деле, нечего.
-					И тут совершенно не имеет значения размер шкафа или вашей гардеробной комнаты.</p>
-				<a href="news_detail.html" class="read-more">Читать дальше</a>
-			</div>
+		</div>
+		<div class="col-xs-12 col-md-3 rightside">
+			<p>Всего товаров на сумму</p>
+			<p><span>5360 руб.</span></p>
+			<a href="ordering.html">Перейти к оформлению заказа</a>
 		</div>
 	</div>
 </div>
@@ -360,6 +357,62 @@
 	  	);
 	});
 </script>
+<!-------------------------- СКРИПТ ПРОВЕРКИ ВВЕДЕНЫХ ДАННЫХ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ----------------------->
+<script>
+//$(document).ready(function(){
+	var success = '<img src="images/check-mark.png">';
+    var form = document.forms.ordering;
+    var lastname = form.elements.lastname;
+    var firstname = form.elements.firstname;
+    var tel = form.elements.tel;
+    var email = form.elements.email;
+    var regexpEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var regexpName = /^[а-яА-Я]{2,35}$/;
+    var regexpTel = /^((\+7)\s\(\s([0-9]{3})\s\)\s([0-9]{3})\s\-\s([0-9]{2})\s\-\s([0-9]{2}))$/;
+    lastname.onblur = function () {
+        if (!(lastname.value.match(regexpName))) {
+            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Имя не должно быть пустым, содержать спец. символы и цифры";
+            document.getElementById('lastname_validation').innerHTML = error;
+        }
+        else {
+            document.getElementById('lastname_validation').innerHTML = success;
+		}
+    }
+	firstname.onblur = function () {
+        if (!(firstname.value.match(regexpName))) {
+            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Имя не должно быть пустым, содержать спец. символы и цифры";
+            document.getElementById('firstname_validation').innerHTML = error;
+        }
+        else {
+            document.getElementById('firstname_validation').innerHTML = success;
+		}
+    }
+	tel.onblur = function () {
+        if (!(tel.value.match(regexpTel))) {
+            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Неверный формат номера телефона";
+            document.getElementById('tel_validation').innerHTML = error;
+        }
+        else {
+			document.getElementById('tel_validation').innerHTML = success;
+		}
+    }
+    email.onblur = function () {
+        if (!(email.value.match(regexpEmail))) {
+            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Почтовый адрес должен содержать имя пользователя, <br/> символ @ и доменное имя почтового сервера";
+            document.getElementById('email_validation').innerHTML = error;
+        }
+        else {
 
+            document.getElementById('email_validation').innerHTML = success;
+		}
+    }
+//})
+</script>
+<!--СКРИПТ ВВОДА НОМЕРА ТЕЛЕФОНА ПРИ ОФОРМЛЕМНИИ ЗАКАЗА-->
+<script type="text/javascript">
+	jQuery(function($){
+	   $("#tel").mask("+7 ( 999 ) 999 - 99 - 99");
+	});
+</script>
 </body>
 </html>
