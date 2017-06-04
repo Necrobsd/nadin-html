@@ -37,7 +37,7 @@
 			<div class="basket">
 				<a href="cart.html" class="active">
 					<div class="image">
-						<p class="counter">15</p>
+						<p class="counter">2</p>
 					</div>
 					<div><p>Корзина(2)</p></div>
 				</a>
@@ -229,27 +229,33 @@
 			<h3 class="left">Корзина</h3>
 			<div class="row">
 				<div class="cart col-xs-12 col-sm-6">
-					<img src="images/catalog/1.jpg">
-					<div>
+					<button type="button" class="delete"><i class="fa fa-close"aria-hidden="true"></i></button>
+					<img src="images/catalog/3.jpg">
+					<div class="description">
 						<form>
 							<h4>Брючный костюм</h4>
-							<p>Размер &nbsp<span>S</span></p>
+							<p>Размер <span>S</span></p>
 							<label>Количество</label>
-							<div class="items_count">
-								<button><i class="fa fa-minus" aria-hidden="true"></i></button>
-								<span>1</span>
-								<button><i class="fa fa-plus" aria-hidden="true"></i></button>
-							</div>
-							Цена<br/><span>2710 руб.</span>
+								<button type="button" class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+								<input type="text" value="1" class="quantity"></input>
+								<button type="button" class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+							<p class="price">Цена<br/><span>2710 руб.</span></p>
 						</form>
-						<i class="fa fa-close"aria-hidden="true"></i>
 					</div>
-
 				</div>
 				<div class="cart col-xs-12 col-sm-6">
+					<button type="button" class="delete"><i class="fa fa-close"aria-hidden="true"></i></button>
 					<img src="images/catalog/1.jpg">
-					<div>
-						<h4>Брючный костюм</h4>
+					<div class="description">
+						<form>
+							<h4>Стильный бомпер</h4>
+							<p>Размер <span>S</span></p>
+							<label>Количество</label>
+								<button type="button" class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+								<input type="text" value="1" class="quantity"></input>
+								<button type="button" class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+							<p class="price">Цена<br/><span>2650 руб.</span></p>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -355,63 +361,6 @@
 			slideMargin: 15,
 		}
 	  	);
-	});
-</script>
-<!-------------------------- СКРИПТ ПРОВЕРКИ ВВЕДЕНЫХ ДАННЫХ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ----------------------->
-<script>
-//$(document).ready(function(){
-	var success = '<img src="images/check-mark.png">';
-    var form = document.forms.ordering;
-    var lastname = form.elements.lastname;
-    var firstname = form.elements.firstname;
-    var tel = form.elements.tel;
-    var email = form.elements.email;
-    var regexpEmail = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    var regexpName = /^[а-яА-Я]{2,35}$/;
-    var regexpTel = /^((\+7)\s\(\s([0-9]{3})\s\)\s([0-9]{3})\s\-\s([0-9]{2})\s\-\s([0-9]{2}))$/;
-    lastname.onblur = function () {
-        if (!(lastname.value.match(regexpName))) {
-            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Имя не должно быть пустым, содержать спец. символы и цифры";
-            document.getElementById('lastname_validation').innerHTML = error;
-        }
-        else {
-            document.getElementById('lastname_validation').innerHTML = success;
-		}
-    }
-	firstname.onblur = function () {
-        if (!(firstname.value.match(regexpName))) {
-            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Имя не должно быть пустым, содержать спец. символы и цифры";
-            document.getElementById('firstname_validation').innerHTML = error;
-        }
-        else {
-            document.getElementById('firstname_validation').innerHTML = success;
-		}
-    }
-	tel.onblur = function () {
-        if (!(tel.value.match(regexpTel))) {
-            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Неверный формат номера телефона";
-            document.getElementById('tel_validation').innerHTML = error;
-        }
-        else {
-			document.getElementById('tel_validation').innerHTML = success;
-		}
-    }
-    email.onblur = function () {
-        if (!(email.value.match(regexpEmail))) {
-            var error = "* Поле заполнено неправильно: <br/>&nbsp;&nbsp;&nbsp;Почтовый адрес должен содержать имя пользователя, <br/> символ @ и доменное имя почтового сервера";
-            document.getElementById('email_validation').innerHTML = error;
-        }
-        else {
-
-            document.getElementById('email_validation').innerHTML = success;
-		}
-    }
-//})
-</script>
-<!--СКРИПТ ВВОДА НОМЕРА ТЕЛЕФОНА ПРИ ОФОРМЛЕМНИИ ЗАКАЗА-->
-<script type="text/javascript">
-	jQuery(function($){
-	   $("#tel").mask("+7 ( 999 ) 999 - 99 - 99");
 	});
 </script>
 </body>

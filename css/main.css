@@ -19,7 +19,9 @@ body{
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
     color: #150111;
 }
-
+button {
+    outline: none;
+}
 #header .row {
     margin-top: 20px;
     margin-left: 0;
@@ -179,9 +181,6 @@ input[type="search"] {
 .basket a:hover, .basket a:active {
     background-color: #f242ea;
 }
-.basket a.active {
-   background-color: #f242ea;
-}
 
 .menu-container{
     width: 100%;
@@ -217,6 +216,9 @@ input[type="search"] {
 
 .main-menu a:hover {
 	background-color: #f242ea;
+}
+.main-menu a.active {
+    background-color: #f242ea;
 }
 
 
@@ -436,6 +438,9 @@ p.social a  {
     }
     .basket .counter {
         display: none;
+    }
+    .basket a.active {
+       background-color: #f242ea;
     }
     #catalog_menu {
         display: none!important;
@@ -1113,32 +1118,37 @@ label.good_size input:checked + span {
     color: #550055;
 }
 .cart {
+    margin: 10px 0;
     color: #150111;
+    height: 168px;
 }
 .cart img {
-    width: 30%;
+    max-width: 170px;
+    width: 35%;
+    display: block;
     float: left;
-    margin: 10px 15px 10px 0;
+    /*margin: 10px 15px 10px 0;*/
 }
-.cart .items_count {
-    border: solid 1px #550055;
-    border-radius: 5px;
-    float: left;
-}
-.cart .items_count span {
-    margin: 5px;
-}
-.cart > div {
-    position: relative;
+.cart .description {
+    width: 65%;
+    padding-left: 10px;
     float: left;
 }
-.cart >div>.fa-close{
+.cart .delete {
     position: absolute;
-    top: 10px;
+    background: none;
+    color: #dddcdd;
+    top: 5px;
     right: 10px;
+}
+.cart .delete:hover {
+    color: #000000;
 }
 .cart p {
     font: 16px 'Roboto Regular';
+}
+.cart .price {
+    margin-top:15px;
 }
 .cart p span {
     font: 18px 'Roboto Medium';
@@ -1146,13 +1156,30 @@ label.good_size input:checked + span {
 }
 .cart label {
     float: left;
-    font: 16px 'Roboto Regular';
+    font: 14px 'Roboto Regular';
     margin: 4px 10px 4px 0;
 }
 .cart button {
     border: none;
     background-color: #550055;
     color: #ffffff;
+}
+.cart button.minus {
+    border-radius: 5px 0 0 5px;
+}
+.cart button.plus {
+    border-radius: 0 5px 5px 0;
+}
+.cart .quantity {
+    border-top: 1px solid #550055;
+    border-bottom: 1px solid #550055;
+}
+.cart input {
+    padding: 0;
+    margin: -4px;
+    border: none;
+    width: 25px;
+    text-align: center;
 }
 /**************************** Мобильное меню **************************/
 /* The Overlay (background) */
