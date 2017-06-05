@@ -454,7 +454,12 @@
 	/* Close when someone clicks on the "x" symbol inside the overlay */
 	function closeNav() {
 		document.getElementById("MobileNav").style.width = "0%";
-		document.body.style.position = ""
+		document.body.style.position = "";
+		var ul=$('ul.mobile_catalog_submenu');
+		ul.css("display", "none");
+		var a=$('ul.mobile_catalog_submenu').prev();
+		a.removeClass('expanded');
+		a.addClass('collapsed');
 	}
 </script>
 <!--------------------Раскрывает и скрывает меню каталога ------------------------->
