@@ -1152,7 +1152,7 @@ label.good_size input:checked + span {
     margin-top:50px;
 }
 
-.cart p span {
+.cart  span {
     font: 18px 'Roboto Medium';
     text-transform: uppercase;
 }
