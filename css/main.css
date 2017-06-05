@@ -1123,6 +1123,7 @@ label.good_size input:checked + span {
     height: 168px;
 }
 .cart h4 {
+    padding-right: 20px;
     margin-bottom: 20px;
 }
 .cart img {
