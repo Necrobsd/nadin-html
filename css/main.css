@@ -1148,6 +1148,7 @@ label.good_size input:checked + span {
     font: 16px 'Roboto Regular';
 }
 .cart .price {
+    clear: both;
     margin-top:50px;
 }
 
