@@ -1176,6 +1176,7 @@ label.good_size input:checked + span {
 .cart .form-control {
     color: #150111;
     text-align: center;
+    z-index: 0;
     padding: 0;
     height: 26px;
     border: 1px solid #550055;
