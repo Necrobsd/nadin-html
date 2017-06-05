@@ -1148,8 +1148,9 @@ label.good_size input:checked + span {
     font: 16px 'Roboto Regular';
 }
 .cart .price {
-    margin-top:15px;
+    margin-top:50px;
 }
+
 .cart p span {
     font: 18px 'Roboto Medium';
     text-transform: uppercase;
@@ -1159,28 +1160,32 @@ label.good_size input:checked + span {
     font: 14px 'Roboto Regular';
     margin: 4px 10px 4px 0;
 }
-.cart button {
-    border: none;
+.cart .buttons {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    float: left;
+    padding: 1px 0;
+    height: 27px;
     background-color: #550055;
+}
+.cart button {
+    background: none;
+    height: 24px;
+    border: none;
     color: #ffffff;
 }
-.cart button.minus {
-    border-radius: 5px 0 0 5px;
-}
-.cart button.plus {
-    border-radius: 0 5px 5px 0;
-}
+
 .cart .quantity {
-    border-top: 1px solid #550055;
-    border-bottom: 1px solid #550055;
-}
-.cart input {
+    outline: none;
     padding: 0;
-    margin: -4px;
+    margin: 0 -4px;
     border: none;
     width: 25px;
+    height: 25px;
     text-align: center;
 }
+
 /**************************** Мобильное меню **************************/
 /* The Overlay (background) */
 .overlay {
