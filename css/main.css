@@ -1122,19 +1122,23 @@ label.good_size input:checked + span {
     color: #150111;
     height: 168px;
 }
+.cart h4 {
+    margin-bottom: 20px;
+}
 .cart img {
     max-width: 170px;
     width: 35%;
     display: block;
     float: left;
-    /*margin: 10px 15px 10px 0;*/
+    margin: 10px 0;
 }
 .cart .description {
     width: 65%;
-    padding-left: 10px;
+    padding-left: 20px;
     float: left;
 }
 .cart .delete {
+    border: none;
     position: absolute;
     background: none;
     color: #dddcdd;
@@ -1146,46 +1150,71 @@ label.good_size input:checked + span {
 }
 .cart p {
     font: 16px 'Roboto Regular';
+    margin-bottom: 5px;
 }
 .cart .price {
     clear: both;
-    margin-top:50px;
+    margin-top:40px;
 }
 
-.cart  span {
+.cart p > span {
     font: 18px 'Roboto Medium';
     text-transform: uppercase;
 }
-.cart label {
-    float: left;
-    font: 14px 'Roboto Regular';
-    margin: 4px 10px 4px 0;
+
+.cart .btn {
+    outline: none;
+    padding: 1px 4px;
+    font-size: 16px;
 }
-.cart .buttons {
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    float: left;
-    padding: 1px 0;
-    height: 27px;
+.cart .btn-number {
+    max-height: 26px;
     background-color: #550055;
-}
-.cart button {
-    background: none;
-    height: 24px;
-    border: none;
     color: #ffffff;
 }
-
-.cart .quantity {
-    outline: none;
-    padding: 0;
-    margin: 0 -4px;
-    border: none;
-    width: 25px;
-    height: 25px;
+.cart .form-control {
+    color: #150111;
     text-align: center;
+    padding: 0;
+    height: 26px;
+    border: 1px solid #550055;
 }
+.input-group .input-group-btn {
+    font-size: 16px;
+}
+.cart label {
+    float: left;
+    font: 16px 'Roboto Regular';
+    margin: 4px 5px 4px 0;
+}
+.cart .good_item {
+    float: left;
+}
+/*.cart .buttons {*/
+    /*border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    /*-moz-border-radius: 5px;*/
+    /*float: left;*/
+    /*padding: 1px 0;*/
+    /*height: 27px;*/
+    /*background-color: #550055;*/
+/*}*/
+/*.cart button {*/
+    /*background: none;*/
+    /*height: 24px;*/
+    /*border: none;*/
+    /*color: #ffffff;*/
+/*}*/
+
+/*.cart .quantity {*/
+    /*outline: none;*/
+    /*padding: 0;*/
+    /*margin: 0 -4px;*/
+    /*border: none;*/
+    /*width: 25px;*/
+    /*height: 25px;*/
+    /*text-align: center;*/
+/*}*/
 
 /**************************** Мобильное меню **************************/
 /* The Overlay (background) */
