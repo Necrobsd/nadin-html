@@ -24,7 +24,7 @@
     <![endif]-->
 
 
-	<title>Карточка товара</title>
+	<title>Контакты</title>
 </head>
 
 <body>
@@ -48,7 +48,7 @@
 			</a>
 		</div>
 		<div class="MobileMenu col-xs-2 col-sm-0 col-md-0 col-lg-0">
-			<div class="MobileMenu" onclick="openNav()">
+			<div onclick="openNav()">
 				<img src="images/burger.png">
 			</div>
 		</div>
@@ -64,9 +64,9 @@
 <!-------------------------- Меню navbar ------------------------------------->
 <div class="menu-container">
 	<div class="main-menu">
-		<a href="catalog.html" class="active">каталог</a>
+		<a href="catalog.html">каталог</a>
 		<a href="news_list.html">новости</a>
-		<a href="contacts.html">КОНТАКТЫ</a>
+		<a href="contacts.html" class="active">КОНТАКТЫ</a>
 		<a href="help.html">ПОМОЩЬ</a>
 	</div>
 </div>
@@ -132,7 +132,7 @@
 			<a href="news_list.html">Новости</a>
 			</div>
 			<div class="menu-item">
-			<a href="contacts.html">Контакты</a>
+			<a href="#">Контакты</a>
 			</div>
 			<div class="menu-item">
 			<a href="help.html">Помощь</a>
@@ -225,37 +225,40 @@
 <!----------------------------------- КОНТЕНТ  -------------------------------------->
 <div class="content container">
 	<div class="row">
-		<!-------------------- Карточка товара ---------------------->
-		<div class="col-xs-12 good_card">
-			<h3 class="left">Карточка товара</h3>
+		<div class="col-xs-12 contacts">
+			<h3 class="left">Контакты</h3>
+			<img src="images/contacts.jpg">
+			<p>Вы можете связаться с нами любым удобным для Вас способом:</p>
 			<div class="row">
-				<div class="col-md-8 col-sm-12">
-					<img src="images/good.jpg">
+				<div class="col-xs-6 col-md-3">
+					<p><i class="fa fa-phone" aria-hidden="true"></i> Телефон:<br/></p>
+					<span>+7 (111) 111-11-11</span>
 				</div>
-				<div class="col-md-4 col-sm-12">
-					<form action="">
-						<h3>Кардиган</h3>
-						<p class="price">2580 руб.</p>
-						<div id="size-table">
-							<a href="javascript:PopUpShow()">Определите свой размер</a>
-							<label class="good_size">
-								<input name="size", type="radio", value="XS" ><span>XS</span>
-							</label>
-							<label class="good_size">
-								<input name="size", type="radio", value="S" ><span>S</span>
-							</label>
-							<label class="good_size">
-								<input name="size", type="radio", value="M" ><span>M</span>
-							</label>
-						</div>
-						<div class="add-to-basket">
-							<input type="submit" value="Добавить в корзину">
-						</div>
-						<h4>Описание товара:</h4>
-						<p>Суперпупер кардиган, из приятной ткани. Сделает вас стройной, даже если вы толстушка :)</p>
-					</form>
+				<div class="col-xs-6 col-md-3">
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> E-mail:<br/></p>
+					<span>Mail@mail.ru</span>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i> Адрес:<br/></p>
+					<span>г. Хабаровск, 680000, ул. Муравьева-Амурского 124 оф. 38</span>
 				</div>
 			</div>
+			<p>Также вы можете воспользоваться электронной формой обращения:</p>
+			<form class="ordering" action="">
+				<div class="formfield">
+					<label>Имя:</label><br/>
+					<input type="text" size="50" placeholder="Иван Иванович"><br/>
+				</div>
+				<div class="formfield">
+					<label>Адрес электронной почты:</label><br/>
+					<input type="text" size="50" placeholder="example@mail.ru">
+				</div>
+				<div class="formfield">
+					<label>Ваше сообщение:</label><br/>
+					<textarea  rows="8" cols="70" placeholder="Оставьте свое сообщение, вопрос или отзыв..."></textarea>
+				</div>
+				<input type="submit" value="Отправить" class="button">
+			</form>
 		</div>
 	</div>
 </div>
@@ -311,69 +314,6 @@
 		</div>
 	</div>
 </div>
-<div class="b-popup" id="popup1">
-    <div class="b-popup-content">
-        <h4>Таблица размеров</h4>
-		<table>
-			<tr>
-				<th>Размер</th>
-				<td>42</td>
-				<td>44</td>
-				<td>46</td>
-				<td>48</td>
-				<td>50</td>
-				<td>52</td>
-				<td>54</td>
-				<td>56</td>
-			</tr>
-			<tr>
-				<th>Объем груди</th>
-				<td>84</td>
-				<td>88</td>
-				<td>92</td>
-				<td>96</td>
-				<td>100</td>
-				<td>104</td>
-				<td>108</td>
-				<td>112</td>
-			</tr>
-			<tr>
-				<th>Объем талии</th>
-				<td>64</td>
-				<td>68</td>
-				<td>72</td>
-				<td>76</td>
-				<td>80</td>
-				<td>84</td>
-				<td>88</td>
-				<td>92</td>
-			</tr>
-			<tr>
-				<th>Объем бедер</th>
-				<td>90</td>
-				<td>94</td>
-				<td>98</td>
-				<td>102</td>
-				<td>106</td>
-				<td>110</td>
-				<td>114</td>
-				<td>118</td>
-			</tr>
-			<tr>
-				<th>Длина изделия</th>
-				<td>110</td>
-				<td>112</td>
-				<td>114</td>
-				<td>116</td>
-				<td>118</td>
-				<td>120</td>
-				<td>120</td>
-				<td>120</td>
-			</tr>
-		</table>
-    <a href="javascript:PopUpHide()"><i class="fa fa-times" aria-hidden="true"></i></a>
-    </div>
-</div>
 <!--------------------------- Мобильное меню------------------------------------>
 <script type="text/javascript">
 	/* Open when someone clicks on the span element */
@@ -420,41 +360,6 @@
 		}
 	  	);
 	});
-</script>
-<!-------------------------- СКРИПТ ОТКРЫТИЯ ТАБЛИЦЫ РАЗМЕРОВ ----------------------->
-<script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow(){
-        // Если экран меньше 768px таблица растягивается на весь экран,
-		// иначе центрируем таблицу
-		function getCenter(){
-		    if ($(window).width() <= 768){
-		    	$('.b-popup-content').css({
-					position:'absolute',
-					left: 0,
-					right: 0,
-					top: ($(window).height() - $('.b-popup-content').outerHeight())/3,
-					width: $(document).width(),
-				});
-			} else {
-                $('.b-popup-content').css({
-                    position: 'absolute',
-                    left: ($(window).width() - $('.b-popup-content').outerWidth()) / 2,
-                    top: ($(window).height() - $('.b-popup-content').outerHeight()) / 3
-                });
-            }
-		}
-		getCenter();
-        $("#popup1").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
-    }
 </script>
 </body>
 </html>

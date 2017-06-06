@@ -965,6 +965,9 @@ label.good_size input:checked + span {
     margin-left: 60px;
     padding-left: 15px;
 }
+.ordering {
+    margin-top: 25px;
+}
 .ordering .formfield {
     overflow: hidden;
     margin-bottom: 20px;
@@ -987,7 +990,7 @@ label.good_size input:checked + span {
 .ordering p {
     margin-bottom: 5px;
 }
-.ordering input {
+.ordering input, .ordering textarea {
     display: block;
     float: left;
     border: 1px solid #c0c0c0;
@@ -996,6 +999,17 @@ label.good_size input:checked + span {
     color: #150111;
     font: 10.5pt 'Open Sans';
     font-style: normal;
+    max-width: 100%;
+}
+.ordering .button {
+    text-align: center;
+    display: block;
+    padding: 8px 30px ;
+    background-color: #550055;
+    color: #ffffff;
+}
+.ordering .button:hover {
+    background-color: #f242ea;
 }
 .validation {
     margin: 0 0 0 10px;
@@ -1012,6 +1026,10 @@ label.good_size input:checked + span {
 .ordering input::-moz-placeholder          {color:#c0c0c0; font-style: italic}/* Firefox 19+ */
 .ordering input:-moz-placeholder           {color:#c0c0c0; font-style: italic}/* Firefox 18- */
 .ordering input:-ms-input-placeholder      {color:#c0c0c0; font-style: italic}
+.ordering textarea::-webkit-input-placeholder {color:#c0c0c0; font-style: italic}
+.ordering textarea::-moz-placeholder          {color:#c0c0c0; font-style: italic}/* Firefox 19+ */
+.ordering textarea:-moz-placeholder           {color:#c0c0c0; font-style: italic}/* Firefox 18- */
+.ordering textarea:-ms-input-placeholder      {color:#c0c0c0; font-style: italic}
 
 .rightside {
     margin-top: 48px;
@@ -1192,31 +1210,29 @@ label.good_size input:checked + span {
 .cart .good_item {
     float: left;
 }
-/*.cart .buttons {*/
-    /*border-radius: 5px;*/
-    /*-webkit-border-radius: 5px;*/
-    /*-moz-border-radius: 5px;*/
-    /*float: left;*/
-    /*padding: 1px 0;*/
-    /*height: 27px;*/
-    /*background-color: #550055;*/
-/*}*/
-/*.cart button {*/
-    /*background: none;*/
-    /*height: 24px;*/
-    /*border: none;*/
-    /*color: #ffffff;*/
-/*}*/
+.contacts {
+    color: #150111;
+}
+.contacts > p {
+    font: 18px 'Roboto Regular';
+    margin-top: 40px;
+}
+.contacts img {
+    width: 100%;
+    max-width: none;
+    /*margin-bottom: 40px;*/
+}
+.contacts div p {
+    margin-top: 25px;
+    font: 16px 'Roboto Medium';
+}
+.contacts div span {
+    font: 16px 'Roboto Regular';
+}
+.contacts div p i {
+    color: #f242ea;
+}
 
-/*.cart .quantity {*/
-    /*outline: none;*/
-    /*padding: 0;*/
-    /*margin: 0 -4px;*/
-    /*border: none;*/
-    /*width: 25px;*/
-    /*height: 25px;*/
-    /*text-align: center;*/
-/*}*/
 
 /**************************** Мобильное меню **************************/
 /* The Overlay (background) */
