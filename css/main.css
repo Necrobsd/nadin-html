@@ -806,12 +806,12 @@ a.read-more {
     display: block;
     float: left;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-right: 30px;
     padding: 8px 15px;
     border: 2px solid #550055;
     border-radius: 5px;
-    font: 18px 'Roboto Regular';
+    font: 18px 'Roboto Regular'!important;
 }
 a.read-more:hover {
     border-color: #f242ea;
