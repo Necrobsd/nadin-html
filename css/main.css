@@ -1182,6 +1182,9 @@ ul#mobile_catalog_menu a + ul { display: none;}
         padding-top: 7%;
         font-size: 26px;
     }
+    .rightside {
+        margin-top: 42px;
+    }
     .catalog_link {
         font-size: 15px;
         line-height: 21px;
@@ -1189,12 +1192,7 @@ ul#mobile_catalog_menu a + ul { display: none;}
     h3.left {
         font-size: 26px;
     }
-    ul.catalog_sorter {
-        list-style: none;
-        position: absolute;
-        top: 28px;
-        right: 10px;
-    }
+
 }
 @media (max-width: 320px) {
     .catalog_link h3 {
