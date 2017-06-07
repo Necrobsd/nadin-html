@@ -325,16 +325,18 @@
 	function closeNav() {
 		document.getElementById("MobileNav").style.width = "0%";
 		document.body.style.position = "";
-		var ul=$('ul.mobile_catalog_submenu');
-		ul.css("display", "none");
-		ul.prev().removeClass('expanded').addClass('collapsed');
+		var submenu=$('ul.mobile_catalog_submenu');
+		submenu.css("display", "none");
+		submenu.prev().removeClass('expanded').addClass('collapsed');
+		var catalog_menu=$('ul#mobile_catalog_menu');
+		catalog_menu.css("display", "none");
 	}
 </script>
 <!--------------------Раскрывает и скрывает меню каталога ------------------------->
 <script>
    $(function ()
 	{
-		  $('ul#leftmenu ul, ul.mobile_catalog_submenu').each(function(index, el) {
+		  $('ul#leftmenu ul, ul.mobile_catalog_submenu, ul#mobile_catalog_menu').each(function(index, el) {
 			var a = $(this).prev();
 			a.addClass('collapsed').click(function() {
 			  $(el).slideToggle(200, function () {
