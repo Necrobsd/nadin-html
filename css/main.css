@@ -974,6 +974,7 @@ a.read-more i {
     color: #272626;
 }
 ul#mobile_catalog_menu {
+    display: none;
     margin: 8px 0 0 0;
 }
 ul#mobile_catalog_menu li {
@@ -1192,7 +1193,6 @@ ul#mobile_catalog_menu a + ul { display: none;}
     h3.left {
         font-size: 26px;
     }
-
 }
 @media (max-width: 320px) {
     .catalog_link h3 {
