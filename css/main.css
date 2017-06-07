@@ -1196,7 +1196,11 @@ ul#mobile_catalog_menu a + ul { display: none;}
         right: 10px;
     }
 }
-
+@media (max-width: 320px) {
+    .catalog_link h3 {
+        padding-top: 3%;
+    }
+}
 @media (max-width: 425px) {
     .catalog_link h3{
         font-size: 21px;
