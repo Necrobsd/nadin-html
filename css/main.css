@@ -367,6 +367,10 @@ ul#leftmenu a.collapsed {  }
 ul#leftmenu a.expanded {  }
 ul#leftmenu a + ul { display: none;}
 
+.cat-title {
+    position: relative;
+  overflow: hidden;
+}
 h3.left {
     text-align: left;    
   position: relative;
